@@ -1,0 +1,2382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OsPro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="paintwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Sample\GUI_X\GUI_X_vtos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\AntiAlias\GUIAAArc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\AntiAlias\GUIAAChar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\AntiAlias\GUIAAChar2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\AntiAlias\GUIAAChar4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\AntiAlias\GUIAACircle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\AntiAlias\GUIAALib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\AntiAlias\GUIAALine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\AntiAlias\GUIAAPoly.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\AntiAlias\GUIAAPolyOut.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\GUI_JPEG.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdmainct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdmarker.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdmaster.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdmerge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdphuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdpostct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdsample.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdtrans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jfdctflt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jfdctfst.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jfdctint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jidctflt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jidctfst.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jidctint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jidctred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jmemmgr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jquant1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jquant2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jcomapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdapimin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdapistd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdcoefct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdcolor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jddctmgr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdhuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\JPEG\jdinput.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP111.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP222.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP233.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP323.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP332.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP444_12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP444_12_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP444_16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP555.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP556.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP565.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP655.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP666.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP888.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP8666.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDP8666_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDPM233.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDPM323.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDPM332.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDPM444_12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDPM444_16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDPM555.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDPM556.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDPM565.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDPM655.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDPM666.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertColor\LCDPM888.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertMono\LCDP0.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertMono\LCDP2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\ConvertMono\LCDP4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__AddSpaceHex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__Arabic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__CalcTextRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__DivideRound.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__DivideRound32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__DrawBitmap16bpp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__GetCursorPos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__GetFontSizeY.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__GetNumChars.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__HandleEOLine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__IntersectRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__IntersectRects.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__memset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__memset16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__Read.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__ReduceRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__SetText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__strcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__strlen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI__Wrap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_MoveRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_OnKey.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_Pen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_PID.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_RectsIntersect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SaveContext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_ScreenSize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SelectLayer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SelectLCD.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetClipRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetColorIndex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetDecChar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetDefault.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetDrawMode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetLBorder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetLineStyle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetLUTColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetLUTColorEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetLUTEntry.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetOrg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetPixelIndex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetTextAlign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetTextMode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SetTextStyle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SIF.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_SIF_Prop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_TOUCH.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_TOUCH_DriverAnalog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_TOUCH_StoreState.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_TOUCH_StoreUnstable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_UC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_UC_ConvertUC2UTF8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_UC_ConvertUTF82UC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_UC_DispString.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_UC_EncodeNone.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_UC_EncodeUTF8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_WaitEvent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_WaitKey.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_Warn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_API.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_DrawVLine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_GetColorIndex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_GetEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_GetNumDisplays.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_GetPixelColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_Index2ColorEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_L0_Generic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_Mirror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_MixColors256.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_ReadRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_Rotate180.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_RotateCCW.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_RotateCW.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_SelectLCD.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_SetAPI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_SetClipRectEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCD_UpdateColorIndices.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDAA.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDGetP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDInfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDInfo0.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDInfo1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDL0Delta.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDL0Mag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDP1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDP565_Index2Color.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDP888_Index2Color.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDPM565_Index2Color.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDPM888_Index2Color.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDRLE4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDRLE8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\LCDRLE16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_AddBin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_AddDec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_AddDecMin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_AddDecShift.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_AddHex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_AddKeyMsgHook.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_ALLOC_AllocInit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_ALLOC_AllocZero.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_BMP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_BMP_Serialize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CalcColorDist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_ClearRectEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_Color2VisColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorArrowL.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorArrowLI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorArrowLPx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorArrowM.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorArrowMI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorArrowMPx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorArrowS.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorArrowSI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorArrowSPx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorCrossL.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorCrossLI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorCrossLPx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorCrossM.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorCrossMI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorCrossMPx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorCrossS.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorCrossSI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorCrossSPx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorHeaderM.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorHeaderMI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorHeaderMPx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorPal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_CursorPalI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispBin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispCEOL.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispChar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispChars.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispHex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispString.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispStringAt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispStringAtCEOL.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispStringHCenter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispStringInRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispStringInRectEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispStringInRectWrap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DispStringLen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawBitmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawBitmap_555.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawBitmap_565.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawBitmap_888.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawBitmapEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawBitmapExp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawBitmapMag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawFocusRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawGraph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawGraphEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawHLine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawLine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawPie.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawPixel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawPoint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawPolygon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawPolyline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawRectEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_DrawVLine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_ErrorOut.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_Exec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_FillPolygon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_FillRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_FillRectEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetBitmapPixelColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetBitmapPixelIndex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetClientRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetDispPos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetDrawMode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetFontInfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetFontSizeY.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetLineStyle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetOrg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetStringDistX.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetTextAlign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetTextExtend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetTextMode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetVersionString.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GetYSizeOfFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_GIF.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_Goto.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_InitLUT.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_InvertRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_IsInFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_Log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_MergeRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_MOUSE.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI_MOUSE_DriverPS2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUI2DLib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIAlloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIArc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIChar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUICharLine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUICharM.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUICharP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUICirc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIColor2Index.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUICore.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUICurs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIEncJS.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIIndex2Color.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIPolyE.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIPolyM.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIPolyR.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIRealloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIStream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUITask.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUITime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUITimer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIUC0.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIVal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Core\GUIValf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F13X13_CN.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F4x6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F6x8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F08_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F08_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F8x8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F8x10_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F8x12_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F8x13_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F8x13_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F8x15B_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F8x15B_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F8x16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F10_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F10_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F10S_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F10S_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F13_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F13_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F13B_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F13B_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F13H_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F13H_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F13HB_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F13HB_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F16_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F16_1HK.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F16_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F16_HK.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F16B_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F16B_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F24_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F24_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F24B_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F24B_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F32_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F32_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F32B_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\F32B_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FComic18B_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FComic18B_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FComic24B_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FComic24B_ASCII.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FD24x32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FD32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FD36x48.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FD48.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FD48x64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FD60x80.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FD64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Font\FD80.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\LCDDriver\LCDDummy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\PROGBAR_SetBarColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\PROGBAR_SetFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\PROGBAR_SetMinMax.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\PROGBAR_SetText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\PROGBAR_SetTextAlign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\PROGBAR_SetTextColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\PROGBAR_SetTextPos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_GetText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_Image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_SetBkColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_SetDefaultImage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_SetFocusColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_SetFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_SetGroupId.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_SetImage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_SetText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\RADIO_SetTextColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SCROLLBAR.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SCROLLBAR_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SCROLLBAR_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SCROLLBAR_Defaults.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SCROLLBAR_GetValue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SCROLLBAR_SetColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SCROLLBAR_SetWidth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SLIDER.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SLIDER_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SLIDER_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SLIDER_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\SLIDER_SetFocusColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\TEXT.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\TEXT_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\TEXT_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\TEXT_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\TEXT_SetBkColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\TEXT_SetFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\TEXT_SetText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\TEXT_SetTextAlign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\TEXT_SetTextColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\TEXT_SetWrapMode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\WIDGET.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\WIDGET_Effect_3D.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\WIDGET_Effect_3D1L.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\WIDGET_Effect_3D2L.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\WIDGET_Effect_None.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\WIDGET_Effect_Simple.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\WIDGET_FillStringInRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\WIDGET_SetEffect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\WIDGET_SetWidth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\WINDOW.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\WINDOW_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON__SetBitmapObj.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_Bitmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_BMP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_Get.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_GetBitmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_IsPressed.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_SelfDraw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_SetFocusColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_SetTextAlign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\BUTTON_StreamedBitmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_GetState.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_GetText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_Image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_IsChecked.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetBkColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetBoxBkColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetDefaultImage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetFocusColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetImage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetNumStates.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetSpacing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetState.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetTextAlign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\CHECKBOX_SetTextColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DIALOG.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_AddString.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_DeleteItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_GetNumItems.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_InsertString.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_ItemSpacing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_SetAutoScroll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_SetBkColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_SetColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_SetFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_SetScrollbarColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_SetScrollbarWidth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_SetTextAlign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_SetTextColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\DROPDOWN_SetTextHeight.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_GetCursorPixelPos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_GetCursorPos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_GetNumChars.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_SetCursorAtChar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_SetFocussable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_SetInsertMode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_SetpfAddKeyEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_SetpfUpdateBuffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_SetSel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDIT_SetTextMode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDITBin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDITDec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDITFloat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDITHex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\EDITUlong.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN__UpdateButtons.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_AddMenu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_Button.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_ButtonClose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_ButtonMax.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_ButtonMin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_Get.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_IsMinMax.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_MinMaxRest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_SetBorderSize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_SetColors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_SetFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_SetResizeable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_SetTitleHeight.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\FRAMEWIN_SetTitleVis.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GRAPH.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GRAPH_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GRAPH_DATA_XY.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GRAPH_DATA_YT.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GRAPH_SCALE.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_ARRAY.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_ARRAY_DeleteItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_ARRAY_InsertItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_ARRAY_ResizeItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_DRAW.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_DRAW_BITMAP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_DRAW_BMP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_DRAW_Self.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_DRAW_STREAMED.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_EditBin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_EditDec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_EditFloat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_EditHex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_EditString.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\GUI_HOOK.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\HEADER.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\HEADER__SetDrawObj.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\HEADER_Bitmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\HEADER_BMP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\HEADER_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\HEADER_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\HEADER_GetSel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\HEADER_SetDragLimit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\HEADER_StreamedBitmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_DeleteItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_Font.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_GetItemText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_GetNumItems.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_GetTextAlign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_InsertString.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_ItemDisabled.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_ItemSpacing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_MultiSel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_ScrollStep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_SetAutoScroll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_SetBkColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_SetOwner.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_SetOwnerDraw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_SetScrollbarColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_SetScrollbarWidth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_SetString.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_SetTextAlign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTBOX_SetTextColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_DeleteAllRows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_DeleteColumn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_DeleteRow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_DisableRow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_GetBkColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_GetFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_GetHeader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_GetItemText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_GetNumColumns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_GetNumRows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_GetSel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_GetTextColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_InsertRow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetAutoScroll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetBkColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetColumnWidth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetGridVis.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetItemColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetItemText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetLBorder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetRBorder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetRowHeight.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetSel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetSort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetTextAlign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_SetTextColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\LISTVIEW_UserData.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU__FindItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_Attach.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_DeleteItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_DisableItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_EnableItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_GetItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_GetItemText.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_GetNumItems.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_InsertItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_Popup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_SetBkColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_SetBorderSize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_SetFont.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_SetItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MENU_SetTextColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MESSAGEBOX.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MULTIEDIT.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MULTIEDIT_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MULTIEDIT_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MULTIPAGE.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MULTIPAGE_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MULTIPAGE_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\MULTIPAGE_Default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\PROGBAR.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\PROGBAR_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\Widget\PROGBAR_CreateIndirect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__ForEachDesc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__GetFirstSibling.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__GetFocussedChild.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__GetLastSibling.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__GetOrg_AA.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__GetPrevSibling.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__IsAncestor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__IsChild.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__IsEnabled.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__NotifyVisChanged.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__Screen2Client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__SendMessage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__SendMessageIfEnabled.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__SendMessageNoPara.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM__UpdateChildPositions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_AttachWindow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_BringToBottom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_BringToTop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_Broadcast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_CheckScrollPos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_CriticalHandle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_DIAG.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_EnableWindow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_ForEachDesc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetBkColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetCallback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetClientRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetClientWindow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetDesktopWindow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetDesktopWindowEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetDiagInfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetDialogItem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetFirstChild.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetFlags.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetFocussedWindow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetId.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetInsideRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetInsideRectExScrollbar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetInvalidRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetNextSibling.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetOrg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetParent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetPrevSibling.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetScrollbar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetScrollPartner.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetScrollPos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetScrollState.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetWindowRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_GetWindowSize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_HasCaptured.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_HasFocus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_Hide.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_InvalidateArea.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_IsCompletelyVisible.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_IsEnabled.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_IsFocussable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_IsVisible.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_IsWindow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_MakeModal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_Move.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_MoveChildTo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_NotifyParent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_OnKey.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_Paint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_PaintWindowAndDescs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_PID__GetPrevState.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_ResizeWindow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_Screen2Win.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SendMessageNoPara.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SendToParent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetAnchor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetCallback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetCapture.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetCaptureMove.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetCreateFlags.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetDesktopColor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetFocus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetFocusOnNextChild.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetFocusOnPrevChild.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetId.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetpfPollPID.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetScrollbar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetScrollPos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetScrollState.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetSize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetTrans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetTransState.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetUserClipRect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetWindowPos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetXSize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SetYSize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_Show.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_SIM.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_StayOnTop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_Timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_TimerExternal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_UpdateWindowAndDescs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_UserData.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_Validate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WM_ValidateWindow.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WMMemDev.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UCGUI\Start\GUI\WM\WMTouch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="OsPro.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="paintwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="OsPro.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="OsPro.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UCGUI\Start\Config\GUIConf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\Config\GUITouchConf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\Config\LCDConf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\JPEG\jerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\JPEG\jinclude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\JPEG\jmemsys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\JPEG\jmorecfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\JPEG\jpegint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\JPEG\jpeglib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\JPEG\jversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\JPEG\jconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\JPEG\jdct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\JPEG\jdhuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\GUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\LCD_Protected.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\GUI_ConfDefaults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\GUI_FontIntern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\GUI_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\GUI_Protected.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\GUI_VNC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\GUI_X.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\GUIDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\GUIType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\GUIVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\LCD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\LCD_ConfDefaults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\LCD_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Core\LCDSIM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\BUTTON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\BUTTON_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\CHECKBOX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\CHECKBOX_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\DIALOG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\DIALOG_Intern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\DROPDOWN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\DROPDOWN_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\EDIT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\EDIT_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\FRAMEWIN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\FRAMEWIN_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\GRAPH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\GRAPH_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\GUI_ARRAY.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\GUI_HOOK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\HEADER.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\HEADER_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\LISTBOX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\LISTBOX_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\LISTVIEW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\LISTVIEW_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\MENU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\MENU_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\MESSAGEBOX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\MULTIEDIT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\MULTIPAGE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\MULTIPAGE_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\PROGBAR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\PROGBAR_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\RADIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\RADIO_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\SCROLLBAR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\SCROLLBAR_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\SLIDER.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\SLIDER_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\TEXT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\TEXT_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\WIDGET.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\Widget\WINDOW_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\WM\WM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\WM\WM_GUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\WM\WM_Intern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UCGUI\Start\GUI\WM\WM_Intern_ConfDep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
