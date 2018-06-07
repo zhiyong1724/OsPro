@@ -17,7 +17,6 @@ PaintWidget::~PaintWidget()
 void PaintWidget::paintEvent(QPaintEvent *event)
 {
 	QWidget::paintEvent(event);
-	WM_Exec();
 	QPainter painter(this);
 	painter.drawPixmap(0, 0, QPixmap::fromImage(*mImage));
 }
@@ -79,5 +78,10 @@ void PaintWidget::mouseMoveEvent(QMouseEvent *event)
 	state.x = event->x();
 	state.y = event->y();
 	GUI_MOUSE_StoreState(&state);
+	repaint();
+}
+
+void PaintWidget::doUpdateUI()
+{
 	repaint();
 }

@@ -12,6 +12,11 @@ public:
 	PaintWidget(QWidget *parent = Q_NULLPTR);
 	void setPixelIndex(unsigned int x, unsigned int y, unsigned int PixelIndex);
 	unsigned int getPixelIndex(unsigned int x, unsigned int y);
+signals:
+	void updateUI();
+
+public slots:
+    void doUpdateUI();
 protected:
 	virtual ~PaintWidget();
 	virtual void paintEvent(QPaintEvent *event);

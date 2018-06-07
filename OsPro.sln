@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OsPro", "OsPro\OsPro.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15DCBA7E-70FC-43C8-9214-E1A36ECE5C5E} = {15DCBA7E-70FC-43C8-9214-E1A36ECE5C5E}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vtos", "vtos\vtos.vcxproj", "{15DCBA7E-70FC-43C8-9214-E1A36ECE5C5E}"
 EndProject

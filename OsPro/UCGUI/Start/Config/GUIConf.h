@@ -25,7 +25,7 @@ Purpose     : Configures abilities, fonts etc.
 #define GUI_SUPPORT_TOUCH         (1)  /* Support a touch screen (req. win-manager) */
 #define GUI_SUPPORT_MOUSE         (1)  /* Support a mouse */
 
-#define GUI_ALLOC_SIZE            1024 * 1024  /* Size of dynamic memory ... For WM and memory devices*/
+#define GUI_ALLOC_SIZE            (4096 * 1024)  /* Size of dynamic memory ... For WM and memory devices*/
 
 /*********************************************************************
 *
