@@ -45,7 +45,6 @@ void PaintWidget::mousePressEvent(QMouseEvent *event)
 {
 	QWidget::mousePressEvent(event);
 	GUI_PID_STATE state;
-	GUI_MOUSE_GetState(&state);
 	state.x = event->x();
 	state.y = event->y();
 	state.Pressed = 1;
@@ -57,7 +56,6 @@ void PaintWidget::mouseReleaseEvent(QMouseEvent *event)
 {
 	QWidget::mouseReleaseEvent(event);
 	GUI_PID_STATE state;
-	GUI_MOUSE_GetState(&state);
 	state.x = event->x();
 	state.y = event->y();
 	state.Pressed = 0;
@@ -74,7 +72,6 @@ void PaintWidget::mouseMoveEvent(QMouseEvent *event)
 {
 	QWidget::mouseMoveEvent(event);
 	GUI_PID_STATE state;
-	GUI_MOUSE_GetState(&state);
 	state.x = event->x();
 	state.y = event->y();
 	GUI_MOUSE_StoreState(&state);

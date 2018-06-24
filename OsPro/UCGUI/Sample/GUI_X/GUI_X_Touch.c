@@ -19,7 +19,7 @@ Purpose     : Config / System dependent externals for GUI
 
 #include "GUI.h"
 #include "GUI_X.h"
-
+#include "LCD_TFT.h"
 void GUI_TOUCH_X_ActivateX(void) {
 }
 
@@ -27,11 +27,11 @@ void GUI_TOUCH_X_ActivateY(void) {
 }
 
 int  GUI_TOUCH_X_MeasureX(void) {
-  return 0;
+  return _touch_xdata;
 }
 
 int  GUI_TOUCH_X_MeasureY(void) {
-  return 0;
+  return _touch_ydata;
 }
 
 	 	 			 		    	 				 	  			   	 	 	 	 	 	  	  	      	   		 	 	 		  		  	 		 	  	  			     			       	   	 			  		    	 	     	 				  	 					 	 			   	  	  			 				 		 	 	 			     			 

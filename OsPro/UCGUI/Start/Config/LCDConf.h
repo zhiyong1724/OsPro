@@ -26,9 +26,10 @@ Purpose     : Sample configuration file
 *
 **********************************************************************
 */
+#ifdef __WINDOWS__
 
-#define LCD_XSIZE          (600)   /* X-resolution of LCD, Logical coor. */
-#define LCD_YSIZE          (400)   /* Y-resolution of LCD, Logical coor. */
+#define LCD_XSIZE          (480)   /* X-resolution of LCD, Logical coor. */
+#define LCD_YSIZE          (272)   /* Y-resolution of LCD, Logical coor. */
 
 #define LCD_BITSPERPIXEL   (24)
 
@@ -37,7 +38,21 @@ Purpose     : Sample configuration file
 #define LCD_CONTROLLER     (-1)
 
 #define LCD_SWAP_RB        (1)
+
+#else
+
+#define LCD_XSIZE          (480)   /* X-resolution of LCD, Logical coor. */
+#define LCD_YSIZE          (272)   /* Y-resolution of LCD, Logical coor. */
+
+#define LCD_BITSPERPIXEL   (16)
+
+#define LCD_FIXEDPALETTE   (565)
+
+#define LCD_CONTROLLER     (-1)
+
+#define LCD_SWAP_RB        (1)
+
+#endif // __WINDOWS__
  
 #endif /* LCDCONF_H */
-
 	 	 			 		    	 				 	  			   	 	 	 	 	 	  	  	      	   		 	 	 		  		  	 		 	  	  			     			       	   	 			  		    	 	     	 				  	 					 	 			   	  	  			 				 		 	 	 			     			 

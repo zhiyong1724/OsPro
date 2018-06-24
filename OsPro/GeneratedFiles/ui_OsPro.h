@@ -28,9 +28,9 @@ public:
     {
         if (OsPro->objectName().isEmpty())
             OsPro->setObjectName(QStringLiteral("OsPro"));
-        OsPro->resize(600, 400);
-        OsPro->setMinimumSize(QSize(600, 400));
-        OsPro->setMaximumSize(QSize(600, 400));
+        OsPro->resize(480, 272);
+        OsPro->setMinimumSize(QSize(480, 272));
+        OsPro->setMaximumSize(QSize(480, 272));
         CentralWidget = new PaintWidget(OsPro);
         CentralWidget->setObjectName(QStringLiteral("CentralWidget"));
         OsPro->setCentralWidget(CentralWidget);

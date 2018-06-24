@@ -45,18 +45,21 @@ OsPro::OsPro(QWidget *parent)
 	if (0 == os_sys_init())
 	{
 		mHandle = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)task, NULL, 0, NULL);
-		SetThreadPriority(mHandle, THREAD_PRIORITY_HIGHEST);
+		SetThreadPriority(mHandle, THREAD_PRIORITY_TIME_CRITICAL);
 
 		GUI_Init(); //GUI ≥ı ºªØ
 		GUI_SetFont(&GUI_FontF13X13_CN);
 		GUI_UC_SetEncodeUTF8();
-		os_kthread_create(updateUI, NULL, "updateUI");
+		GUI_SetBkColor(GUI_BLUE);
+		GUI_Clear();
 
 		FRAMEWIN_Handle hFrame = FRAMEWIN_Create("frame", NULL, WM_CF_SHOW, 0, 0, 400, 240);
 		FRAMEWIN_SetActive(hFrame, 1);
 		FRAMEWIN_SetMoveable(hFrame, 1);
 		FRAMEWIN_AddMaxButton(hFrame, FRAMEWIN_BUTTON_RIGHT, 0);
 		FRAMEWIN_AddMinButton(hFrame, FRAMEWIN_BUTTON_RIGHT, 1);
+
+		os_kthread_create(updateUI, NULL, "updateUI");
 	}
 }
 
