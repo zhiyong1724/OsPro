@@ -981,7 +981,17 @@ U8 SDinit(void)
 	//CSD
 	if(CMD9(SDCard.iCardRCA,SDCard.lCardCSD))
 	{
-		SDCard.lCardSize = (((SDCard.lCardCSD[1]&0x0000003f)<<16)+((SDCard.lCardCSD[2]&0xffff0000)>>16)+1)*512;
+		if (SD_V1X_CARD == SDCard.cCardType)
+		{
+			unsigned int C_SIZE = ((SDCard.lCardCSD[1] & 0x000003ff) << 2) + ((SDCard.lCardCSD[2] & 0xc0000000) >> 30);
+			unsigned int C_SIZE_MULT = ((SDCard.lCardCSD[2] & 0x00038000) >> 15);
+			unsigned int READ_BL_LEN = ((SDCard.lCardCSD[1] & 0x000f0000) >> 16);
+			SDCard.lCardSize = (C_SIZE + 1) << (C_SIZE_MULT + 2 + READ_BL_LEN - 10);
+		}
+		else if (SDHC_V20_CARD == SDCard.cCardType)
+		{
+			SDCard.lCardSize = (((SDCard.lCardCSD[1] & 0x0000003f) << 16) + ((SDCard.lCardCSD[2] & 0xffff0000) >> 16) + 1) << 9;
+		}
 		SDCard.lSectorSize = ((SDCard.lCardCSD[2]>>6)&0x0000007f)+1;
 		#ifdef __SD_MMC_DEBUG__
 		Uart_Printf("Read Card CSD OK!\n");
