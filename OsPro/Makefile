@@ -729,10 +729,6 @@ $(ELF) : $(OBJS_C) $(VTOS_MODULE_PATH)$(OBJS_PATH)*.o $(OTHER_MODULE_PATH)$(OBJS
 	@echo "LD $^"
 	@$(LD) -Tvtos.lds $^ -o $(OBJS_PATH)$(ELF) $(LIBS_PATH)
 	
-$(OTHER_MODULE_PATH)$(OBJS_PATH)*.o:
-
-$(VTOS_MODULE_PATH)$(OBJS_PATH)*.o :
-	
 %.o : %.c
 	@echo "CC $<"
 	@$(CC) $(CFLAGS) $< -o $@ $(INCLUDE_PATH)
