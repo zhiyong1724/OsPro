@@ -878,33 +878,38 @@ U8 SDinit(void)
 	for(i=0;i<0x1000;i++);  	// Wait 74SDCLK for card
 	
 	CMD0();
-	
-	if(CMD1())
+
+	SDCard.cCardType = INVALID_CARD;
+	if (2 == CMD8())
 	{
-		SDCard.cCardType = MMC_CARD;
+		SDCard.cCardType = SDHC_V20_CARD;
+	}
+
+	SDCard.iCardRCA = 0;
+	for (i = 0; i < 50; i++)
+	{
+		if (ACMD41(SDCard.iCardRCA))
+			break;
+		Delay(200);
+	}
+	if (i < 50)
+	{
+		if (INVALID_CARD == SDCard.cCardType)
+		{
+			SDCard.cCardType = SD_V1X_CARD;
+		}
 	}
 	else
 	{
-		switch(CMD8())
-		{ 
-			case 0://卡固件无效 
-				SDCard.cCardType = INVALID_CARD;
-				break; 
-			case 1://非 SD2.0 卡 
-				SDCard.cCardType = SD_V1X_CARD;
-				break; 
-			case 2://SD2.0 卡 
-				SDCard.cCardType = SDHC_V20_CARD;
-				break; 
-		} 	
-	}
-	
-	SDCard.iCardRCA = 0;
-	for(i=0;i<50;i++)
-	{
-		if(ACMD41(SDCard.iCardRCA))
-			break;
-		Delay(200);
+		for (i = 0; i < 50; i++)
+		{
+			if (CMD1())
+			{
+				SDCard.cCardType = MMC_CARD;
+				break;
+			}
+			Delay(200);
+		}
 	}
 	
 	if(i==50)

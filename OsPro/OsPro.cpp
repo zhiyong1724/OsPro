@@ -59,7 +59,7 @@ OsPro::OsPro(QWidget *parent)
 		FRAMEWIN_AddMaxButton(hFrame, FRAMEWIN_BUTTON_RIGHT, 0);
 		FRAMEWIN_AddMinButton(hFrame, FRAMEWIN_BUTTON_RIGHT, 1);
 
-		os_kthread_create(updateUI, NULL, "updateUI");
+		os_thread_create(updateUI, NULL, "updateUI");
 	}
 }
 

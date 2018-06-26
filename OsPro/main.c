@@ -61,8 +61,8 @@ int main()
 	timer4_init();
 	if (os_sys_init() == 0)
 	{
-		os_kthread_create(task_a, NULL, "task_a");
-		os_kthread_create(ui_thread, NULL, "ui_thread");
+		os_thread_create(task_a, NULL, "task_a");
+		os_thread_create(ui_thread, NULL, "ui_thread");
 		os_sys_start();
 	}
 	return 0;
