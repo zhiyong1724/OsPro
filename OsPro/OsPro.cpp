@@ -8,6 +8,9 @@
 #include "BUTTON.h"
 #include <stdio.h>
 #include "vtos.h"
+#include "FileBrower.h"
+#include "EDIT.h"
+#include "BUTTON.h"
 static PaintWidget *s_PaintWidget = NULL;
 void LCD_L0_SetPixelIndex(int x, int y, int PixelIndex)
 {
@@ -50,14 +53,10 @@ OsPro::OsPro(QWidget *parent)
 		GUI_Init(); //GUI ≥ı ºªØ
 		GUI_SetFont(&GUI_FontF13X13_CN);
 		GUI_UC_SetEncodeUTF8();
-		GUI_SetBkColor(GUI_BLUE);
-		GUI_Clear();
-
-		FRAMEWIN_Handle hFrame = FRAMEWIN_Create("frame", NULL, WM_CF_SHOW, 0, 0, 400, 240);
-		FRAMEWIN_SetActive(hFrame, 1);
-		FRAMEWIN_SetMoveable(hFrame, 1);
-		FRAMEWIN_AddMaxButton(hFrame, FRAMEWIN_BUTTON_RIGHT, 0);
-		FRAMEWIN_AddMinButton(hFrame, FRAMEWIN_BUTTON_RIGHT, 1);
+		EDIT_SetDefaultFont(&GUI_FontF13X13_CN);
+		BUTTON_SetDefaultFont(&GUI_FontF13X13_CN);
+		
+		setupFileBrower(WM_GetDesktopWindow());
 
 		os_thread_create(updateUI, NULL, "updateUI");
 	}
