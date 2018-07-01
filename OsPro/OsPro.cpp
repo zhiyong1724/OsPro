@@ -52,9 +52,9 @@ OsPro::OsPro(QWidget *parent)
 
 		GUI_Init(); //GUI ≥ı ºªØ
 		GUI_SetFont(&GUI_FontF13X13_CN);
-		GUI_UC_SetEncodeUTF8();
 		EDIT_SetDefaultFont(&GUI_FontF13X13_CN);
 		BUTTON_SetDefaultFont(&GUI_FontF13X13_CN);
+		GUI_UC_SetEncodeUTF8();
 		
 		setupFileBrower(WM_GetDesktopWindow());
 

@@ -2142,6 +2142,9 @@
     <ClCompile Include="UCGUI\Start\GUI\WM\WM.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileBrower.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="OsPro.h">
@@ -2376,6 +2379,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UCGUI\Start\GUI\WM\WM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileBrowerDLG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileBrower.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

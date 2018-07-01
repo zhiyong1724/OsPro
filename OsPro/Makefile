@@ -710,6 +710,7 @@ UCGUI/Start/JPEG/jmemmgr.c \
 UCGUI/Start/JPEG/jquant1.c \
 UCGUI/Start/JPEG/jquant2.c \
 UCGUI/Start/JPEG/jutils.c \
+FileBrower.c \
 main.c
 OBJS_C := $(patsubst %.c, %.o, $(SRCS_C))
 VTOS_MODULE_PATH := ../vtos/

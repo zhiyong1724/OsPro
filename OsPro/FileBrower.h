@@ -1,4 +1,4 @@
-#ifndef __FILEBROWER_H__
+﻿#ifndef __FILEBROWER_H__
 #define __FILEBROWER_H__
 #ifdef __cplusplus
 extern "C"

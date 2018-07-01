@@ -113,6 +113,7 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FileBrower.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OsPro.cpp" />
     <ClCompile Include="paintwidget.cpp" />
@@ -836,6 +837,8 @@
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FileBrower.h" />
+    <ClInclude Include="FileBrowerDLG.h" />
     <ClInclude Include="UCGUI\Start\Config\GUIConf.h" />
     <ClInclude Include="UCGUI\Start\Config\GUITouchConf.h" />
     <ClInclude Include="UCGUI\Start\Config\LCDConf.h" />

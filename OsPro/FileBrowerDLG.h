@@ -1,4 +1,4 @@
-/*********************************************************************
+Ôªø/*********************************************************************
 *                                                                    *
 *                SEGGER Microcontroller GmbH & Co. KG                *
 *        Solutions for real time microcontroller applications        *
@@ -22,24 +22,26 @@
 // USER END
 
 #include "DIALOG.h"
-#include "FileBrower.h"
+
 /*********************************************************************
 *
 *       Defines
 *
 **********************************************************************
 */
-#define ID_WINDOW_0 (GUI_ID_USER + 0x00)
-#define ID_BUTTON_0 (GUI_ID_USER + 0x04)
-#define ID_BUTTON_1 (GUI_ID_USER + 0x05)
-#define ID_BUTTON_2 (GUI_ID_USER + 0x06)
-#define ID_BUTTON_3 (GUI_ID_USER + 0x07)
-#define ID_BUTTON_4 (GUI_ID_USER + 0x09)
-#define ID_BUTTON_5 (GUI_ID_USER + 0x0A)
-#define ID_BUTTON_6 (GUI_ID_USER + 0x0B)
-#define ID_BUTTON_7 (GUI_ID_USER + 0x0C)
-#define ID_SCROLLBAR_0 (GUI_ID_USER + 0x0D)
-#define ID_TEXT_0 (GUI_ID_USER + 0x0E)
+#define ID_WINDOW_0   (GUI_ID_USER + 0x00)
+#define ID_TEXT_0   (GUI_ID_USER + 0x01)
+#define ID_BUTTON_0   (GUI_ID_USER + 0x02)
+#define ID_BUTTON_1   (GUI_ID_USER + 0x03)
+#define ID_BUTTON_2   (GUI_ID_USER + 0x04)
+#define ID_BUTTON_3   (GUI_ID_USER + 0x05)
+#define ID_BUTTON_4   (GUI_ID_USER + 0x06)
+#define ID_BUTTON_5   (GUI_ID_USER + 0x07)
+#define ID_BUTTON_6   (GUI_ID_USER + 0x08)
+#define ID_BUTTON_7   (GUI_ID_USER + 0x09)
+#define ID_BUTTON_8   (GUI_ID_USER + 0x0A)
+#define ID_BUTTON_9   (GUI_ID_USER + 0x0B)
+#define ID_SCROLLBAR_0   (GUI_ID_USER + 0x0C)
 
 
 // USER START (Optionally insert additional defines)
@@ -60,19 +62,21 @@
 *       _aDialogCreate
 */
 static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
-	{ WINDOW_CreateIndirect, "FileBrower", ID_WINDOW_0, 0, 0, 480, 272, 0, 0x0, 0 },
-	{ BUTTON_CreateIndirect, "–¬Ω®Œƒº˛", ID_BUTTON_0, 0, 252, 80, 20, 0, 0x0, 0 },
-	{ BUTTON_CreateIndirect, "–¬Ω®Œƒº˛º–", ID_BUTTON_1, 80, 252, 80, 20, 0, 0x0, 0 },
-	{ BUTTON_CreateIndirect, "…æ≥˝", ID_BUTTON_2, 160, 252, 80, 20, 0, 0x0, 0 },
-	{ BUTTON_CreateIndirect, "∏¥÷∆", ID_BUTTON_3, 240, 252, 80, 20, 0, 0x0, 0 },
-	{ BUTTON_CreateIndirect, "“∆∂Ø", ID_BUTTON_4, 320, 252, 80, 20, 0, 0x0, 0 },
-	{ BUTTON_CreateIndirect, "’≥Ã˘", ID_BUTTON_5, 400, 252, 80, 20, 0, 0x0, 0 },
-	{ BUTTON_CreateIndirect, "µº»Î", ID_BUTTON_6, 0, 20, 80, 20, 0, 0x0, 0 },
-	{ BUTTON_CreateIndirect, "µº≥ˆ", ID_BUTTON_7, 80, 20, 80, 20, 0, 0x0, 0 },
-	{ SCROLLBAR_CreateIndirect, "Scrollbar", ID_SCROLLBAR_0, 460, 20, 20, 232, 8, 0x0, 0 },
-	{ TEXT_CreateIndirect, "path", ID_TEXT_0, 0, 0, 480, 20, 0, 0x0, 0 },
-	// USER START (Optionally insert additional widgets)
-	// USER END
+	{ WINDOW_CreateIndirect, "FileBrowerDLG", ID_WINDOW_0, 0, 0, 480, 272, 0, 0x0, 0 },
+{ TEXT_CreateIndirect, "path", ID_TEXT_0, 0, 0, 480, 20, 0, 0x0, 0 },
+{ BUTTON_CreateIndirect, "ÂØºÂÖ•", ID_BUTTON_0, 0, 20, 80, 20, 0, 0x0, 0 },
+{ BUTTON_CreateIndirect, "ÂØºÂá∫", ID_BUTTON_1, 80, 20, 80, 20, 0, 0x0, 0 },
+{ BUTTON_CreateIndirect, "ÂÖ®ÈÉ®ÈÄâ‰∏≠", ID_BUTTON_2, 160, 20, 80, 20, 0, 0x0, 0 },
+{ BUTTON_CreateIndirect, "ÂÖ®ÈÉ®ÂèñÊ∂à", ID_BUTTON_3, 240, 20, 80, 20, 0, 0x0, 0 },
+{ BUTTON_CreateIndirect, "Êñ∞Âª∫Êñá‰ª∂", ID_BUTTON_4, 0, 252, 80, 20, 0, 0x0, 0 },
+{ BUTTON_CreateIndirect, "Êñ∞Âª∫Êñá‰ª∂Â§π", ID_BUTTON_5, 80, 252, 80, 20, 0, 0x0, 0 },
+{ BUTTON_CreateIndirect, "Âà†Èô§", ID_BUTTON_6, 160, 252, 80, 20, 0, 0x0, 0 },
+{ BUTTON_CreateIndirect, "Â§çÂà∂", ID_BUTTON_7, 320, 252, 80, 20, 0, 0x0, 0 },
+{ BUTTON_CreateIndirect, "ÁßªÂä®", ID_BUTTON_8, 240, 252, 80, 20, 0, 0x0, 0 },
+{ BUTTON_CreateIndirect, "Á≤òË¥¥", ID_BUTTON_9, 400, 252, 80, 20, 0, 0x0, 0 },
+{ SCROLLBAR_CreateIndirect, "Scrollbar", ID_SCROLLBAR_0, 460, 40, 20, 212, 8, 0x0, 0 },
+// USER START (Optionally insert additional widgets)
+// USER END
 };
 
 /*********************************************************************
@@ -100,7 +104,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 		Id = WM_GetId(pMsg->hWinSrc);
 		NCode = pMsg->Data.v;
 		switch (Id) {
-		case ID_BUTTON_0: // Notifications sent by '–¬Ω®Œƒº˛'
+		case ID_BUTTON_0: // Notifications sent by 'ÂØºÂÖ•'
 			switch (NCode) {
 			case WM_NOTIFICATION_CLICKED:
 				// USER START (Optionally insert code for reacting on notification message)
@@ -114,7 +118,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 				// USER END
 			}
 			break;
-		case ID_BUTTON_1: // Notifications sent by '–¬Ω®Œƒº˛º–'
+		case ID_BUTTON_1: // Notifications sent by 'ÂØºÂá∫'
 			switch (NCode) {
 			case WM_NOTIFICATION_CLICKED:
 				// USER START (Optionally insert code for reacting on notification message)
@@ -128,7 +132,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 				// USER END
 			}
 			break;
-		case ID_BUTTON_2: // Notifications sent by '…æ≥˝'
+		case ID_BUTTON_2: // Notifications sent by 'ÂÖ®ÈÉ®ÈÄâ‰∏≠'
 			switch (NCode) {
 			case WM_NOTIFICATION_CLICKED:
 				// USER START (Optionally insert code for reacting on notification message)
@@ -142,7 +146,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 				// USER END
 			}
 			break;
-		case ID_BUTTON_3: // Notifications sent by '∏¥÷∆'
+		case ID_BUTTON_3: // Notifications sent by 'ÂÖ®ÈÉ®ÂèñÊ∂à'
 			switch (NCode) {
 			case WM_NOTIFICATION_CLICKED:
 				// USER START (Optionally insert code for reacting on notification message)
@@ -156,7 +160,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 				// USER END
 			}
 			break;
-		case ID_BUTTON_4: // Notifications sent by '“∆∂Ø'
+		case ID_BUTTON_4: // Notifications sent by 'Êñ∞Âª∫Êñá‰ª∂'
 			switch (NCode) {
 			case WM_NOTIFICATION_CLICKED:
 				// USER START (Optionally insert code for reacting on notification message)
@@ -170,7 +174,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 				// USER END
 			}
 			break;
-		case ID_BUTTON_5: // Notifications sent by '’≥Ã˘'
+		case ID_BUTTON_5: // Notifications sent by 'Êñ∞Âª∫Êñá‰ª∂Â§π'
 			switch (NCode) {
 			case WM_NOTIFICATION_CLICKED:
 				// USER START (Optionally insert code for reacting on notification message)
@@ -184,7 +188,7 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 				// USER END
 			}
 			break;
-		case ID_BUTTON_6: // Notifications sent by 'µº»Î'
+		case ID_BUTTON_6: // Notifications sent by 'Âà†Èô§'
 			switch (NCode) {
 			case WM_NOTIFICATION_CLICKED:
 				// USER START (Optionally insert code for reacting on notification message)
@@ -198,7 +202,35 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 				// USER END
 			}
 			break;
-		case ID_BUTTON_7: // Notifications sent by 'µº≥ˆ'
+		case ID_BUTTON_7: // Notifications sent by 'Â§çÂà∂'
+			switch (NCode) {
+			case WM_NOTIFICATION_CLICKED:
+				// USER START (Optionally insert code for reacting on notification message)
+				// USER END
+				break;
+			case WM_NOTIFICATION_RELEASED:
+				// USER START (Optionally insert code for reacting on notification message)
+				// USER END
+				break;
+				// USER START (Optionally insert additional code for further notification handling)
+				// USER END
+			}
+			break;
+		case ID_BUTTON_8: // Notifications sent by 'ÁßªÂä®'
+			switch (NCode) {
+			case WM_NOTIFICATION_CLICKED:
+				// USER START (Optionally insert code for reacting on notification message)
+				// USER END
+				break;
+			case WM_NOTIFICATION_RELEASED:
+				// USER START (Optionally insert code for reacting on notification message)
+				// USER END
+				break;
+				// USER START (Optionally insert additional code for further notification handling)
+				// USER END
+			}
+			break;
+		case ID_BUTTON_9: // Notifications sent by 'Á≤òË¥¥'
 			switch (NCode) {
 			case WM_NOTIFICATION_CLICKED:
 				// USER START (Optionally insert code for reacting on notification message)
@@ -252,12 +284,12 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 *
 *       CreateFileBrower
 */
-WM_HWIN CreateFileBrower(WM_HWIN parent);
-WM_HWIN CreateFileBrower(WM_HWIN parent) {
-  WM_HWIN hWin;
+WM_HWIN CreateFileBrower(WM_HWIN hWin);
+WM_HWIN CreateFileBrower(WM_HWIN hWin) {
+	
 
-  hWin = GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), _cbDialog, parent, 0, 0);
-  return hWin;
+	hWin = GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), _cbDialog, hWin, 0, 0);
+	return hWin;
 }
 
 // USER START (Optionally insert additional public code)

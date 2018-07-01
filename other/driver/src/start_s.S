@@ -75,6 +75,8 @@ reset:
 	bl disable_mmu
 	bl init_clock
 	bl init_sdram
+	bl MMU_EnableICache
+	bl MMU_EnableDCache
 	bl copy_to_sdram
 	bl init_stack
 	bl clear_bss
@@ -144,10 +146,26 @@ init_sdram:
 	bne 0b
 	mov pc, lr
 	
+//开启代码高速缓存
+#define R1_I  (1<<12)
+MMU_EnableICache:
+   mrc p15,0,r0,c1,c0,0
+   orr r0,r0,#R1_I
+   mcr p15,0,r0,c1,c0,0
+   mov pc, lr
+
+//开启代码数据缓存
+#define R1_C  (1<<2)
+MMU_EnableDCache:
+   mrc p15,0,r0,c1,c0,0
+   orr r0,r0,#R1_C
+   mcr p15,0,r0,c1,c0,0
+   mov pc, lr
+	
 //把代码从sram拷贝到sdram
 copy_to_sdram:
 	ldr r0, =0x30008000
-	ldr r1, =0x30000000
+	ldr r1, =0x00000000
 	add r3, r0, #1024*4
 
 copy_loop:
@@ -160,7 +178,7 @@ copy_loop:
 	mov pc, lr
 //初始化栈
 init_stack:
-	ldr sp, =0x33fff000
+	ldr sp, =0x34000000
 	mov pc ,lr
 //清空bss段
 .globl _bss_start
@@ -192,10 +210,6 @@ to_swi:
 	push {lr}
 	swi 0
 	pop {lr}
-	mov pc, lr
-
-.global raise
-raise:
 	mov pc, lr
 
 mem_data:

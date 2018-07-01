@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include "def.h"
 #include "option.h"
 #include "2440addr.h"
 #include "2440lib.h"
@@ -81,7 +80,7 @@ void Test_SDI(void)
 		cRxBuffer[i] = 0x00;
 	}
 	
-	if(Read_One_Block(4096,(U32 *)cRxBuffer))
+	if(Read_One_Block(0,(U32 *)cRxBuffer))
 	{
 		for(i=0;i<512;)
 		{
@@ -93,11 +92,11 @@ void Test_SDI(void)
 			if(i%16==0)
 				Uart_Printf("\n");
 		}
-		Uart_Printf("\nRead 4096 Block is OK!\n");
+		Uart_Printf("\nRead 0 Block is OK!\n");
 	}
 	else
 	{
-		Uart_Printf("\nRead 4096 Block is Fail!\n");
+		Uart_Printf("\nRead 0 Block is Fail!\n");
 	}
 	
 	
@@ -220,7 +219,7 @@ U8 CMD8(void)
 		
 	rSDICSTA = 0xa00;					// Clear cmd_end(with rsp)
 	
-	if((rSDIRSP0&0x1aa)==0x1aa)
+	if(rSDIRSP0 == 0x1aa)
 		return 2;		
 	else
 		return 0;
@@ -986,16 +985,16 @@ U8 SDinit(void)
 	//CSD
 	if(CMD9(SDCard.iCardRCA,SDCard.lCardCSD))
 	{
-		if (SD_V1X_CARD == SDCard.cCardType)
+		if (SDCard.lCardCSD[0] & 0xc0000000)
+		{
+			SDCard.lCardSize = (((SDCard.lCardCSD[1] & 0x0000003f) << 16) + ((SDCard.lCardCSD[2] & 0xffff0000) >> 16) + 1) << 9;
+		}
+		else
 		{
 			unsigned int C_SIZE = ((SDCard.lCardCSD[1] & 0x000003ff) << 2) + ((SDCard.lCardCSD[2] & 0xc0000000) >> 30);
 			unsigned int C_SIZE_MULT = ((SDCard.lCardCSD[2] & 0x00038000) >> 15);
 			unsigned int READ_BL_LEN = ((SDCard.lCardCSD[1] & 0x000f0000) >> 16);
 			SDCard.lCardSize = (C_SIZE + 1) << (C_SIZE_MULT + 2 + READ_BL_LEN - 10);
-		}
-		else if (SDHC_V20_CARD == SDCard.cCardType)
-		{
-			SDCard.lCardSize = (((SDCard.lCardCSD[1] & 0x0000003f) << 16) + ((SDCard.lCardCSD[2] & 0xffff0000) >> 16) + 1) << 9;
 		}
 		SDCard.lSectorSize = ((SDCard.lCardCSD[2]>>6)&0x0000007f)+1;
 		#ifdef __SD_MMC_DEBUG__

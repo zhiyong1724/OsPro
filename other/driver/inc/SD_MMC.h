@@ -1,6 +1,6 @@
 #ifndef __SD_H__
 #define __SD_H__
-
+#include "def.h"
 #define	INICLK		300000
 #define	SDCLK		24000000	//PCLK=49.392MHz
 #define	MMCCLK		15000000	//PCLK=49.392MHz
@@ -35,7 +35,7 @@ typedef struct SD_STRUCT
 	U32 timeout_erase;			/* 擦块超时时间(单位: 8 SPI clock) */ 
 }sSD_struct; 
 
-
+extern sSD_struct SDCard;
 
 
 
