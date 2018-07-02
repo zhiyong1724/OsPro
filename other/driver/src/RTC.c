@@ -1,4 +1,4 @@
-//====================================================================
+Ôªø//====================================================================
 // File Name : RTC.c
 // Function  : TQ2440 RTC Test 
 // Version   : 1.0
@@ -15,13 +15,13 @@ void RTC_Time_Set( void )
 {
 	rRTCCON = 1 ;		//RTC read and write enable
 
-	rBCDYEAR = 0x08 ;		//ƒÍ
-	rBCDMON  = 0x11 ;		//‘¬
-	rBCDDATE = 0x07 ;		//»’	
-	rBCDDAY  = 0x05 ;		//–«∆⁄
-	rBCDHOUR = 0x12 ;		//–° ±
-	rBCDMIN  = 0x00 ;			//∑÷
-	rBCDSEC  = 0x00 ;		//√Î
+	rBCDYEAR = 0x08 ;		//Âπ¥
+	rBCDMON  = 0x11 ;		//Êúà
+	rBCDDATE = 0x07 ;		//Êó•	
+	rBCDDAY  = 0x05 ;		//ÊòüÊúü
+	rBCDHOUR = 0x12 ;		//Â∞èÊó∂
+	rBCDMIN  = 0x00 ;			//ÂàÜ
+	rBCDSEC  = 0x00 ;		//Áßí
 	
 	rRTCCON &= ~1 ;		//RTC read and write disable
 }
@@ -41,13 +41,13 @@ void RTC_Display(void)
 	{
 		rRTCCON = 1 ;		//RTC read and write enable
 
-		year = 0x2000+rBCDYEAR  ;		//ƒÍ
-		month = rBCDMON  ;		//‘¬
-		day = rBCDDATE  ;		//»’	
-//		week = rBCDDAY  ;		//–«∆⁄
-		hour = rBCDHOUR  ;		//–° ±
-		minute = rBCDMIN  ;		//∑÷
-		second = rBCDSEC  ;		//√Î
+		year = 0x2000+rBCDYEAR  ;		//Âπ¥
+		month = rBCDMON  ;		//Êúà
+		day = rBCDDATE  ;		//Êó•	
+//		week = rBCDDAY  ;		//ÊòüÊúü
+		hour = rBCDHOUR  ;		//Â∞èÊó∂
+		minute = rBCDMIN  ;		//ÂàÜ
+		second = rBCDSEC  ;		//Áßí
 		
 		rRTCCON &= ~1 ;		//RTC read and write disable
 

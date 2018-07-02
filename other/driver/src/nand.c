@@ -1,4 +1,4 @@
-/*
+﻿/*
  support 512 page and 2048 page NAND Flash
 */
 #include "def.h"

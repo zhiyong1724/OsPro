@@ -1,4 +1,4 @@
-/*
+Ôªø/*
 *********************************************************************************************************
 *                                             uC/GUI V3.98
 *                        Universal graphic software for embedded applications
@@ -6,7 +6,7 @@
 *                       (c) Copyright 2002, Micrium Inc., Weston, FL
 *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
 *
-*              µC/GUI is protected by international copyright laws. Knowledge of the
+*              Á§ê/GUI is protected by international copyright laws. Knowledge of the
 *              source code may not be used to write a similar product. This file may
 *              only be used in accordance with a license and should not be redistributed
 *              in any way. We appreciate your understanding and fairness.
@@ -48,10 +48,10 @@ static void _ShowSeveralFunctions(DROPDOWN_Handle hDropDown) {
   GUI_Delay(SPEED * 0.8);
   DROPDOWN_AddString(hDropDown, "English");
   DROPDOWN_AddString(hDropDown, "Deutsch");
-  DROPDOWN_AddString(hDropDown, "FranÁais");
+  DROPDOWN_AddString(hDropDown, "FranÈè∞is");
   DROPDOWN_AddString(hDropDown, "Japanese");
   DROPDOWN_AddString(hDropDown, "Italiano");
-  DROPDOWN_AddString(hDropDown, "EspaÒol");
+  DROPDOWN_AddString(hDropDown, "EspaÈßâl");
   DROPDOWN_AddString(hDropDown, "Other language ...");
   GUI_Delay(SPEED * 0.6);
   /* Increment selection */

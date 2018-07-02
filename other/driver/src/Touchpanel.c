@@ -1,4 +1,4 @@
-/*****************************************
+Ôªø/*****************************************
   NAME: Touchpanel.c
   DESC: ADC & Touch screen test
  *****************************************/
@@ -44,12 +44,12 @@ void Init_Touchpanel(void)
 	rINTMSK &= ~BIT_ADC;       //ADC Touch Screen Mask bit clear
 	rINTSUBMSK &= ~(BIT_SUB_TC);
 
-	rADCDLY = 50000; //—” ± ±º‰                 
-	rADCCON = (ADCPRS << 6) | (1 << 14); // A/D◊™ªª∆˜‘§∑÷∆µ÷µŒ™ 19+1  πƒ‹‘§∑÷∆µ∆˜   
-	rADCTSC = 0xd3;////YM ‰≥ˆ«˝∂Ø∆˜ πƒ‹ YP ‰≥ˆ«˝∂Ø∆˜ πƒ‹  XPø™πÿ πƒ‹ µ»¥˝÷–∂œ    
-	rINTMSK &= ~(BIT_ADC); //‘ –ÌADC÷–∂œ   ADC÷–∂œ∞¸¿®∆’Õ®ADC∫Õ¥•√˛∆¡÷–∂œ      
-	rINTSUBMSK &= ~(BIT_SUB_TC);//‘ –Ì¥•√˛∆¡◊”‘¥÷–∂œ         
-	rINTSUBMSK &= ~(BIT_SUB_ADC);//‘ –Ì ADC◊”‘¥÷–∂œ  
+	rADCDLY = 50000; //Âª∂Êó∂Êó∂Èó¥                 
+	rADCCON = (ADCPRS << 6) | (1 << 14); // A/DËΩ¨Êç¢Âô®È¢ÑÂàÜÈ¢ëÂÄº‰∏∫ 19+1 ‰ΩøËÉΩÈ¢ÑÂàÜÈ¢ëÂô®   
+	rADCTSC = 0xd3;////YMËæìÂá∫È©±Âä®Âô®‰ΩøËÉΩ YPËæìÂá∫È©±Âä®Âô®‰ΩøËÉΩ  XPÂºÄÂÖ≥‰ΩøËÉΩ Á≠âÂæÖ‰∏≠Êñ≠    
+	rINTMSK &= ~(BIT_ADC); //ÂÖÅËÆ∏ADC‰∏≠Êñ≠   ADC‰∏≠Êñ≠ÂåÖÊã¨ÊôÆÈÄöADCÂíåËß¶Êë∏Â±è‰∏≠Êñ≠      
+	rINTSUBMSK &= ~(BIT_SUB_TC);//ÂÖÅËÆ∏Ëß¶Êë∏Â±èÂ≠êÊ∫ê‰∏≠Êñ≠         
+	rINTSUBMSK &= ~(BIT_SUB_ADC);//ÂÖÅËÆ∏ ADCÂ≠êÊ∫ê‰∏≠Êñ≠  
 
 }
 
@@ -57,14 +57,14 @@ void Init_Touchpanel(void)
 void __irq AdcTsAuto(void)
 {
 	static unsigned long ulSaveAdcdly;
-	rSRCPND |= 1 << 31; //«Â≥˝ADC‘¥π“∆÷–∂œ±Í÷æŒª        
-	rINTPND |= 1 << 31; //«Â≥˝÷–∂œ±Í÷æŒª 
-	if (rSUBSRCPND & (1 << 10))//≈–∂œ «≤ª « ADC÷–∂œ 
+	rSRCPND |= 1 << 31; //Ê∏ÖÈô§ADCÊ∫êÊåÇËµ∑‰∏≠Êñ≠Ê†áÂøó‰Ωç        
+	rINTPND |= 1 << 31; //Ê∏ÖÈô§‰∏≠Êñ≠Ê†áÂøó‰Ωç 
+	if (rSUBSRCPND & (1 << 10))//Âà§Êñ≠ÊòØ‰∏çÊòØ ADC‰∏≠Êñ≠ 
 	{
-		rSUBSRCPND |= 1 << 10;//«Â≥˝ADC÷–∂œ
-		while (!(rADCCON & 0x8000));//µ»¥˝ADC◊™ªªÕÍ≥…
-		_touch_xdata = (rADCDAT0 & 0x3ff); //»°xdata 
-		_touch_ydata = (rADCDAT1 & 0x3ff); //»°ydata  
+		rSUBSRCPND |= 1 << 10;//Ê∏ÖÈô§ADC‰∏≠Êñ≠
+		while (!(rADCCON & 0x8000));//Á≠âÂæÖADCËΩ¨Êç¢ÂÆåÊàê
+		_touch_xdata = (rADCDAT0 & 0x3ff); //Âèñxdata 
+		_touch_ydata = (rADCDAT1 & 0x3ff); //Âèñydata  
 		//Uart_Printf("0count=%d  XP=%d, YP=%d\n", _touch_count++, _touch_ydata, _touch_xdata);    //X-position Conversion data
 		_touch_xdata = (_touch_xdata - 140) * 272 / (860 - 140);
 		_touch_ydata = 950 - _touch_ydata;
@@ -78,21 +78,21 @@ void __irq AdcTsAuto(void)
 		GUI_MOUSE_StoreState(&state);
 		//Uart_Printf("1count=%d  XP=%d, YP=%d\n", _touch_count++, _touch_ydata, _touch_xdata);    //X-position Conversion data
 	}
-	if (rSUBSRCPND & (1 << 9))//≈–∂œ «≤ª «¥•√˛ ÷–∂œ  
+	if (rSUBSRCPND & (1 << 9))//Âà§Êñ≠ÊòØ‰∏çÊòØËß¶Êë∏ ‰∏≠Êñ≠  
 	{
-		rSUBSRCPND |= 1 << 9;//«Â≥˝¥•√˛÷–∂œ
-		if ((!(rADCDAT0 & 0x8000)) && (!(rADCDAT1 & 0x8000))) //µ± « ¥•√˛± ∞¥œ¬µƒ◊¥Ã¨ 
+		rSUBSRCPND |= 1 << 9;//Ê∏ÖÈô§Ëß¶Êë∏‰∏≠Êñ≠
+		if ((!(rADCDAT0 & 0x8000)) && (!(rADCDAT1 & 0x8000))) //ÂΩìÊòØ Ëß¶Êë∏Á¨îÊåâ‰∏ãÁöÑÁä∂ÊÄÅ 
 		{
-			rADCTSC = (1 << 3) | (1 << 2);//XP…œ¿≠Ω˚÷π ◊‘∂ØÀ≥–ÚX∑ΩœÚ∫ÕY∑ΩœÚ≤‚¡ø  
+			rADCTSC = (1 << 3) | (1 << 2);//XP‰∏äÊãâÁ¶ÅÊ≠¢ Ëá™Âä®È°∫Â∫èXÊñπÂêëÂíåYÊñπÂêëÊµãÈáè  
 			ulSaveAdcdly = rADCDLY;
 			rADCDLY = 40000;
-			rADCCON |= 0x1; //‘ –ÌADC∆Ù∂Ø 
-			while (rADCCON & 0x1);//µ»¥˝∆Ù∂ØÕÍ≥…    
+			rADCCON |= 0x1; //ÂÖÅËÆ∏ADCÂêØÂä® 
+			while (rADCCON & 0x1);//Á≠âÂæÖÂêØÂä®ÂÆåÊàê    
 		}
-		else//± º‚Ãß∆◊¥Ã¨  
+		else//Á¨îÂ∞ñÊä¨Ëµ∑Áä∂ÊÄÅ  
 		{
 			rADCDLY = ulSaveAdcdly;
-			rADCTSC = 0xd3; //YM ‰≥ˆ«˝∂Ø∆˜ πƒ‹ YP ‰≥ˆ«˝∂Ø∆˜ πƒ‹  XPø™πÿ πƒ‹ µ»¥˝÷–∂œ
+			rADCTSC = 0xd3; //YMËæìÂá∫È©±Âä®Âô®‰ΩøËÉΩ YPËæìÂá∫È©±Âä®Âô®‰ΩøËÉΩ  XPÂºÄÂÖ≥‰ΩøËÉΩ Á≠âÂæÖ‰∏≠Êñ≠
 			GUI_PID_STATE state;
 			state.x = _touch_ydata;
 			state.y = _touch_xdata;

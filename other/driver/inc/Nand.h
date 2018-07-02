@@ -1,4 +1,4 @@
-#ifndef __NAND_H
+﻿#ifndef __NAND_H
 #define __NAND_H
 
 #define NUM_BLOCKS			0x1000	//  64 MB Smartmedia card.

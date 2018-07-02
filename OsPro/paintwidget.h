@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #ifndef __PAINTWIDGET_H__
 #define __PAINTWIDGET_H__
 #include <QtWidgets/QWidget>

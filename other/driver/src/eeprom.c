@@ -1,4 +1,4 @@
-/*
+﻿/*
  support wr/rd parameters to/from eeprom
 */
 #include "def.h"

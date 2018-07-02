@@ -1,4 +1,4 @@
-#include "paintwidget.h"
+﻿#include "paintwidget.h"
 #include "WM.h"
 #include "GUI.h"
 #include <QtGUI/QPainter>

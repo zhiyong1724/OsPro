@@ -1,4 +1,4 @@
-#ifndef _TQ2440_OV9650_H_
+﻿#ifndef _TQ2440_OV9650_H_
 #define _TQ2440_OV9650_H_
 
 #define CHIP_DELAY 0xFF

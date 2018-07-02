@@ -1,4 +1,4 @@
-#include "def.h"
+ï»¿#include "def.h"
 #include "2440addr.h"
 #include "2440lib.h"
 #include "AudioDrv.h"
@@ -104,7 +104,7 @@ void RecordTest(void)
 	HWAVEIN hwi = 1;	
 	
 	Uart_Printf( "\nThe Frequency of record is 48KHz\n" );
-	fmt.nSamplesPerSec = 48000;		//²ÉÑùÆµÂÊÎª48KHz
+	fmt.nSamplesPerSec = 48000;		//é‡‡æ ·é¢‘çŽ‡ä¸º48KHz
 	fmt.wBitsPerSample = 16;
 
 	fmt.wFormatTag		= WAVE_FORMAT_PCM;

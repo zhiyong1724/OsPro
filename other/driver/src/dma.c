@@ -1,4 +1,4 @@
-#include "def.h"
+﻿#include "def.h"
 #include "option.h"
 #include "2440addr.h"
 #include "2440lib.h"
@@ -27,8 +27,8 @@ static struct{
 DMAChannel[MAX_DMA_CHANNEL];
 
 /********************************************************/
-//attr��16λΪ�豸ID,��16λ�ĸ�8λΪDMA����Դ,Ŀ������(AHP/APB,INCREASE/FIX)
-//��8λΪ����Դ,����ֵʧ��ΪREQUEST_DMA_FAIL,�ɹ���16λΪ�豸ID,��8λΪ���뵽��ͨ��
+//attr高16位为设备ID,低16位的高8位为DMA传送源,目的属性(AHP/APB,INCREASE/FIX)
+//低8位为请求源,返回值失败为REQUEST_DMA_FAIL,成功高16位为设备ID,低8位为申请到的通道
 U32 RequestDMASW(U32 attr, U32 mode)
 {
 	U16 channel;

@@ -1,4 +1,4 @@
-#include "2440lib.h"
+Ôªø#include "2440lib.h"
 #include "timer.h"
 #include "LCD_TFT.h"
 #include "led.h"
@@ -9,6 +9,7 @@
 #include "FileBrower.h"
 #include "EDIT.h"
 #include "BUTTON.h"
+#include "mmu.h"
 static void task_a(void *p_arg)
 {
 	int s_state = 0;
@@ -41,6 +42,7 @@ static void ui_thread(void *p_arg)
 
 int main()
 {
+	MMU_Init();
 	led_init();
 	Port_Init();
 	Uart_Select(0);
@@ -48,7 +50,7 @@ int main()
 	Test_SDI();
 	Init_Touchpanel();
 	Lcd_TFT_Init();
-	GUI_Init(); //GUI ≥ı ºªØ
+	GUI_Init(); //GUI ÂàùÂßãÂåñ
 	GUI_SetFont(&GUI_FontF13X13_CN);
 	EDIT_SetDefaultFont(&GUI_FontF13X13_CN);
 	BUTTON_SetDefaultFont(&GUI_FontF13X13_CN);

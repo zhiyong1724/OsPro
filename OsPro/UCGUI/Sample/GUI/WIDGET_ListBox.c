@@ -1,4 +1,4 @@
-/*
+Ôªø/*
 *********************************************************************************************************
 *                                             uC/GUI V3.98
 *                        Universal graphic software for embedded applications
@@ -6,7 +6,7 @@
 *                       (c) Copyright 2002, Micrium Inc., Weston, FL
 *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
 *
-*              µC/GUI is protected by international copyright laws. Knowledge of the
+*              Á§ê/GUI is protected by international copyright laws. Knowledge of the
 *              source code may not be used to write a similar product. This file may
 *              only be used in accordance with a license and should not be redistributed
 *              in any way. We appreciate your understanding and fairness.
@@ -55,13 +55,13 @@ static void _ShowSeveralFunctions(LISTBOX_Handle hListBox) {
   /* Add strings */
   GUI_DispStringAtCEOL("LISTBOX_AddString", 5, 55);
   GUI_Delay(SPEED);
-  LISTBOX_AddString(hListBox, "FranÁais");
+  LISTBOX_AddString(hListBox, "FranÈè∞is");
   GUI_Delay(SPEED / 6);
   LISTBOX_AddString(hListBox, "Japanese");
   GUI_Delay(SPEED / 6);
   LISTBOX_AddString(hListBox, "Italiano");
   GUI_Delay(SPEED / 6);
-  LISTBOX_AddString(hListBox, "EspaÒol");
+  LISTBOX_AddString(hListBox, "EspaÈßâl");
   GUI_Delay(SPEED / 6);
   LISTBOX_AddString(hListBox, "Other language ...");
   GUI_Delay(SPEED * 0.6);

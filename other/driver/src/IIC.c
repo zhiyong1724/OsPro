@@ -1,4 +1,4 @@
-//====================================================================
+﻿//====================================================================
 // File Name : IIC.c
 // Function  : TQ2440 IIC-bus Master Tx/Rx mode Test Program
 //             (Interrupt / Non Interrupt (Polling))

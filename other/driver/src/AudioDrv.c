@@ -1,4 +1,4 @@
-#include "def.h"
+ï»¿#include "def.h"
 #include "2440addr.h"
 #include "2440lib.h"
 #include "AudioDrv.h"
@@ -630,7 +630,7 @@ static void Init1341(char mode)
 
 		_WrL3Data(0xe3,0);		//1,1,1,0, 0,0,11 
 								//Status 1,Gain of DAC 6 dB,Gain of ADC 6dB,ADC non-inverting,DAC non-inverting
-								//,Single speed playback,ADC-On DAC-On,DAC´ò¿ªÊ¹Â¼ÒôÊ±¿É´Ó¶ú»úÌıµ½ÉùÒô
+								//,Single speed playback,ADC-On DAC-On,DACæ‰“å¼€ä½¿å½•éŸ³æ—¶å¯ä»è€³æœºå¬åˆ°å£°éŸ³
 
 //		_WrL3Addr(0x14 + 0);	//DATA0 (000101xx+00)
 //		_WrL3Data(0x3f,0);		//00,11 1111  : Volume control (6 bits)  

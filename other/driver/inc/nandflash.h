@@ -1,4 +1,4 @@
-#ifndef _NANDFLASH_H
+﻿#ifndef _NANDFLASH_H
 #define _NANDFLASH_H
 #include "def.h"
 #include "2440addr.h"

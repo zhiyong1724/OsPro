@@ -1,9 +1,9 @@
-#include "LCD_TFT.h"
+Ôªø#include "LCD_TFT.h"
 
 
 #define WIN32
 
-#if(LCD_Type == LCDT35)			// 3.5¥Á∆¡
+#if(LCD_Type == LCDT35)			// 3.5ÂØ∏Â±è
 unsigned char Bliss_240320[] = {
 
    /* scan line 1 */
@@ -22088,7 +22088,7 @@ unsigned char Bliss_240320[] = {
 
 };
 
-#elif((LCD_Type == LCDW35) || (LCD_Type == LCDS35))			// 3.5¥Á∆¡
+#elif((LCD_Type == LCDW35) || (LCD_Type == LCDS35))			// 3.5ÂØ∏Â±è
 
 unsigned char flower1_320_240[] = {
 

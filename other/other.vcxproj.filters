@@ -42,6 +42,63 @@
     <ClInclude Include="driver\inc\SD_MMC.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="driver\inc\Wav_source.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\Test_OV9650.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\profile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\Option.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\norflash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\nandflash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\mmu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\memtest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\MAIN.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\keyscan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\IIC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\dma.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\camproset.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\camif.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\camdef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\camdata.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\bootpara.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\AudioDrv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver\inc\2440usb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="driver\src\2440lib.c">
@@ -69,6 +126,63 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="driver\src\SD_MMC.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\Adc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\AudioDrv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\camif.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\camproset.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\dma.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\eeprom.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\IIC.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\IrDA.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\keyscan.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\Main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\memtest.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\mmu.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\nandflash.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\Pic.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\profile.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\RTC.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\Test_OV9650.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\TQ_LOGO.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\src\UDA1341.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

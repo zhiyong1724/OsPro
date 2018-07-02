@@ -1,4 +1,4 @@
-/*
+Ôªø/*
 *********************************************************************************************************
 *                                                uC/GUI
 *                        Universal graphic software for embedded applications
@@ -6,7 +6,7 @@
 *                       (c) Copyright 2002, Micrium Inc., Weston, FL
 *                       (c) Copyright 2002, SEGGER Microcontroller Systeme GmbH
 *
-*              µC/GUI is protected by international copyright laws. Knowledge of the
+*              Á§ê/GUI is protected by international copyright laws. Knowledge of the
 *              source code may not be used to write a similar product. This file may
 *              only be used in accordance with a license and should not be redistributed
 *              in any way. We appreciate your understanding and fairness.
@@ -551,7 +551,7 @@ static void _cbAboutBox(WM_MESSAGE* pMsg) {
       GUI_SetTextMode(GUI_TM_TRANS);
       GUI_DrawBitmap(&_Logo, 4, 4);
       GUI_DispStringHCenterAt("Reversi V1.0", 49, 48);
-      GUI_DispStringHCenterAt("µC/GUI", 138, 38);
+      GUI_DispStringHCenterAt("Á§ê/GUI", 138, 38);
       GUI_DispStringHCenterAt(acText,  138, 48);
       GUI_DispStringHCenterAt("Compiled " __DATE__ " "__TIME__, 88, 68);
       GUI_DispStringHCenterAt("(c) 1998-2005", 88, 87);

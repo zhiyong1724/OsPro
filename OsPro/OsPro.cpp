@@ -1,5 +1,4 @@
-#pragma execution_character_set("utf-8")
-#include "OsPro.h"
+Ôªø#include "OsPro.h"
 #include "LCD_Private.h" 
 #include "GUI.h"
 #include "WM.h"
@@ -50,7 +49,7 @@ OsPro::OsPro(QWidget *parent)
 		mHandle = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)task, NULL, 0, NULL);
 		SetThreadPriority(mHandle, THREAD_PRIORITY_TIME_CRITICAL);
 
-		GUI_Init(); //GUI ≥ı ºªØ
+		GUI_Init(); //GUI ÂàùÂßãÂåñ
 		GUI_SetFont(&GUI_FontF13X13_CN);
 		EDIT_SetDefaultFont(&GUI_FontF13X13_CN);
 		BUTTON_SetDefaultFont(&GUI_FontF13X13_CN);

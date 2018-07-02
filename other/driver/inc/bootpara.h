@@ -1,4 +1,4 @@
-#ifndef BOOTPARAMS_H
+ï»¿#ifndef BOOTPARAMS_H
 #define	BOOTPARAMS_H
 
 typedef struct {
@@ -41,7 +41,7 @@ int set_params(void);
 
 #ifdef GLOBAL_PARAMS
 
-//Ğ¡ÓÚµÈÓÚ512¸ö×Ö½Ú,×î¶à±£´æ24¸öITEMºÍ128×Ö½ÚÓÃ»§¶¨ÒåµÄ×Ö·û´®
+//å°äºç­‰äº512ä¸ªå­—èŠ‚,æœ€å¤šä¿å­˜24ä¸ªITEMå’Œ128å­—èŠ‚ç”¨æˆ·å®šä¹‰çš„å­—ç¬¦ä¸²
 BootParams boot_params = {
 	{"bootpara", 1},	//0=boot without parameters,1=boot with parameters
 	{"cpuclk",   2},	//0=100M, 1=200M, 2=300M, 3=400M
@@ -60,7 +60,7 @@ BootParams boot_params = {
 	DEFAULT_USER_PARAMS
 };
 
-//Ğ¡ÓÚµÈÓÚ256×Ö½Ú
+//å°äºç­‰äº256å­—èŠ‚
 VenderParams vend_params = {
 	{"VendID",   0x76543210},
 	{"ProdID",   0xfedcba98},

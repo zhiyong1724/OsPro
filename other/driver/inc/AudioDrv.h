@@ -1,4 +1,4 @@
-#ifndef	AUDIO_DRV_H
+﻿#ifndef	AUDIO_DRV_H
 #define	AUDIO_DRV_H
 
 #include "def.h"

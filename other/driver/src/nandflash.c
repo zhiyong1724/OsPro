@@ -1,4 +1,4 @@
-#include "nandflash.h"
+﻿#include "nandflash.h"
 #define ECC_BUFF_SIZE 6
 static U8 ECCBuf[ECC_BUFF_SIZE];
 

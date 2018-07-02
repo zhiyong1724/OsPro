@@ -1,4 +1,4 @@
-#ifndef	__NORFLASH_H
+﻿#ifndef	__NORFLASH_H
 #define	__NORFLASH_H
 
 int UnlockAllBlks(void);

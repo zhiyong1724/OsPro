@@ -1,4 +1,4 @@
-#ifndef	DMA_ADMIN_H
+﻿#ifndef	DMA_ADMIN_H
 #define	DMA_ADMIN_H
 
 #define	MAX_DMA_CHANNEL	4

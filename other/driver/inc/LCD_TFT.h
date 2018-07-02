@@ -1,27 +1,27 @@
-/**************************************************************
+ï»¿/**************************************************************
 The initial and control for TFT LCD
 **************************************************************/
 #define __irq
-#define LCDW35			1		// ÌìÇ¶3.5´çÆÁ(320X240)»ò¶«»ª3.5´çÆÁ»òÆæÃÀ3.5´çÆÁ
-#define LCDS35			2		// ÈıĞÇ3.5´çÆÁ(320X240)
-#define LCDT35			3		// ¶«Ö¥3.5´çÆÁ(240X320)
-#define LCDW43			4		// ÌìÇ¶4.3´çÆÁ(480X272)
-#define LCD57			5		// 5.7´çÆÁ
-#define LCDA70			6		// 7.0´çÆÁ(800X480)
+#define LCDW35			1		// å¤©åµŒ3.5å¯¸å±(320X240)æˆ–ä¸œå3.5å¯¸å±æˆ–å¥‡ç¾3.5å¯¸å±
+#define LCDS35			2		// ä¸‰æ˜Ÿ3.5å¯¸å±(320X240)
+#define LCDT35			3		// ä¸œèŠ3.5å¯¸å±(240X320)
+#define LCDW43			4		// å¤©åµŒ4.3å¯¸å±(480X272)
+#define LCD57			5		// 5.7å¯¸å±
+#define LCDA70			6		// 7.0å¯¸å±(800X480)
 #define VGA			7		// VGA(640X480)
-#define LCDA104			8		// 10.4´çÆÁ(800X600)
+#define LCDA104			8		// 10.4å¯¸å±(800X600)
 
-#define LCD_Type		LCDW43		//Éè¶¨ÆÁµÄÀàĞÍ
+#define LCD_Type		LCDW43		//è®¾å®šå±çš„ç±»å‹
 
-#if(LCD_Type == LCDW35)				// ¶«»ªÆÁ
+#if(LCD_Type == LCDW35)				// ä¸œåå±
 
 #define MVAL		(13)
 #define MVAL_USED 	(0)			//0=each frame   1=rate by MVAL
 #define INVVDEN		(1)			//0=normal       1=inverted
 #define BSWP		(0)			//Byte swap control
 #define HWSWP		(1)			//Half word swap control
-#define PNRMODE		(3)			// ÉèÖÃÎªTFTÆÁ
-#define BPPMODE		(12)			// ÉèÖÃÎª16bppÄ£Ê½
+#define PNRMODE		(3)			// è®¾ç½®ä¸ºTFTå±
+#define BPPMODE		(12)			// è®¾ç½®ä¸º16bppæ¨¡å¼
 
 //TFT_SIZE
 #define LCD_XSIZE_TFT 	(320)	
@@ -31,25 +31,25 @@ The initial and control for TFT LCD
 #define SCR_YSIZE_TFT 	(240)
 
 //Timing parameter for 3.5' LCD
-#define VBPD 		(12)			//´¹Ö±Í¬²½ĞÅºÅµÄºó¼ç
-#define VFPD 		(4)			//´¹Ö±Í¬²½ĞÅºÅµÄÇ°¼ç
-#define VSPW 		(5)			//´¹Ö±Í¬²½ĞÅºÅµÄÂö¿í
+#define VBPD 		(12)			//å‚ç›´åŒæ­¥ä¿¡å·çš„åè‚©
+#define VFPD 		(4)			//å‚ç›´åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define VSPW 		(5)			//å‚ç›´åŒæ­¥ä¿¡å·çš„è„‰å®½
 
-#define HBPD 		(22)			//Ë®Æ½Í¬²½ĞÅºÅµÄºó¼ç
-#define HFPD 		(33)			//Ë®Æ½Í¬²½ĞÅºÅµÄÇ°¼ç
-#define HSPW 		(44)			//Ë®Æ½Í¬²½ĞÅºÅµÄÂö¿í
+#define HBPD 		(22)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„åè‚©
+#define HFPD 		(33)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define HSPW 		(44)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„è„‰å®½
 
 #define CLKVAL_TFT 	(6) 	
 
-#elif(LCD_Type == LCDS35)			// ÈıĞÇÆÁ
+#elif(LCD_Type == LCDS35)			// ä¸‰æ˜Ÿå±
 
 #define MVAL		(13)
 #define MVAL_USED 	(0)			//0=each frame   1=rate by MVAL
 #define INVVDEN		(1)			//0=normal       1=inverted
 #define BSWP		(0)			//Byte swap control
 #define HWSWP		(1)			//Half word swap control
-#define PNRMODE		(3)			// ÉèÖÃÎªTFTÆÁ
-#define BPPMODE		(12)			// ÉèÖÃÎª16bppÄ£Ê½
+#define PNRMODE		(3)			// è®¾ç½®ä¸ºTFTå±
+#define BPPMODE		(12)			// è®¾ç½®ä¸º16bppæ¨¡å¼
 
 //TFT_SIZE
 #define LCD_XSIZE_TFT 	(320)	
@@ -59,25 +59,25 @@ The initial and control for TFT LCD
 #define SCR_YSIZE_TFT 	(240)
 
 //Timing parameter for 3.5' LCD
-#define VBPD 		(12)			//´¹Ö±Í¬²½ĞÅºÅµÄºó¼ç
-#define VFPD 		(4)			//´¹Ö±Í¬²½ĞÅºÅµÄÇ°¼ç
-#define VSPW 		(5)			//´¹Ö±Í¬²½ĞÅºÅµÄÂö¿í
+#define VBPD 		(12)			//å‚ç›´åŒæ­¥ä¿¡å·çš„åè‚©
+#define VFPD 		(4)			//å‚ç›´åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define VSPW 		(5)			//å‚ç›´åŒæ­¥ä¿¡å·çš„è„‰å®½
 
-#define HBPD 		(8)			//Ë®Æ½Í¬²½ĞÅºÅµÄºó¼ç
-#define HFPD 		(16)			//Ë®Æ½Í¬²½ĞÅºÅµÄÇ°¼ç
-#define HSPW 		(4)			//Ë®Æ½Í¬²½ĞÅºÅµÄÂö¿í
+#define HBPD 		(8)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„åè‚©
+#define HFPD 		(16)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define HSPW 		(4)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„è„‰å®½
 
 #define CLKVAL_TFT 	(6) 	
 
-#elif(LCD_Type == LCDT35)			// ¶«Ö¥ÆÁ
+#elif(LCD_Type == LCDT35)			// ä¸œèŠå±
 
 #define MVAL		(13)
 #define MVAL_USED 	(0)			//0=each frame   1=rate by MVAL
 #define INVVDEN		(1)			//0=normal       1=inverted
 #define BSWP		(0)			//Byte swap control
 #define HWSWP		(1)			//Half word swap control
-#define PNRMODE		(3)			// ÉèÖÃÎªTFTÆÁ
-#define BPPMODE		(12)			// ÉèÖÃÎª16bppÄ£Ê½
+#define PNRMODE		(3)			// è®¾ç½®ä¸ºTFTå±
+#define BPPMODE		(12)			// è®¾ç½®ä¸º16bppæ¨¡å¼
 
 //TFT_SIZE
 #define LCD_XSIZE_TFT 	(240)	
@@ -87,25 +87,25 @@ The initial and control for TFT LCD
 #define SCR_YSIZE_TFT 	(320)
 
 //Timing parameter for 3.5' LCD
-#define VBPD 		(1)			//´¹Ö±Í¬²½ĞÅºÅµÄºó¼ç
-#define VFPD 		(2)			//´¹Ö±Í¬²½ĞÅºÅµÄÇ°¼ç
-#define VSPW 		(6)			//´¹Ö±Í¬²½ĞÅºÅµÄÂö¿í
+#define VBPD 		(1)			//å‚ç›´åŒæ­¥ä¿¡å·çš„åè‚©
+#define VFPD 		(2)			//å‚ç›´åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define VSPW 		(6)			//å‚ç›´åŒæ­¥ä¿¡å·çš„è„‰å®½
 
-#define HBPD 		(5)			//Ë®Æ½Í¬²½ĞÅºÅµÄºó¼ç
-#define HFPD 		(10)			//Ë®Æ½Í¬²½ĞÅºÅµÄÇ°¼ç
-#define HSPW 		(15)			//Ë®Æ½Í¬²½ĞÅºÅµÄÂö¿í
+#define HBPD 		(5)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„åè‚©
+#define HFPD 		(10)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define HSPW 		(15)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„è„‰å®½
 
 #define CLKVAL_TFT 	(4) 	
 
-#elif(LCD_Type == LCDW43)			// 4.3´çÆÁ
+#elif(LCD_Type == LCDW43)			// 4.3å¯¸å±
 
 #define MVAL		(13)
 #define MVAL_USED 	(0)			//0=each frame   1=rate by MVAL
 #define INVVDEN		(1)			//0=normal       1=inverted
 #define BSWP		(0)			//Byte swap control
 #define HWSWP		(1)			//Half word swap control
-#define PNRMODE		(3)			// ÉèÖÃÎªTFTÆÁ
-#define BPPMODE		(12)			// ÉèÖÃÎª16bppÄ£Ê½
+#define PNRMODE		(3)			// è®¾ç½®ä¸ºTFTå±
+#define BPPMODE		(12)			// è®¾ç½®ä¸º16bppæ¨¡å¼
 
 //TFT_SIZE
 #define LCD_XSIZE_TFT 	(480)	
@@ -115,25 +115,25 @@ The initial and control for TFT LCD
 #define SCR_YSIZE_TFT 	(272)
 
 //Timing parameter for 4.3' LCD
-#define VBPD 		(2)			//´¹Ö±Í¬²½ĞÅºÅµÄºó¼ç
-#define VFPD 		(4)			//´¹Ö±Í¬²½ĞÅºÅµÄÇ°¼ç
-#define VSPW 		(8)			//´¹Ö±Í¬²½ĞÅºÅµÄÂö¿í
+#define VBPD 		(2)			//å‚ç›´åŒæ­¥ä¿¡å·çš„åè‚©
+#define VFPD 		(4)			//å‚ç›´åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define VSPW 		(8)			//å‚ç›´åŒæ­¥ä¿¡å·çš„è„‰å®½
 
-#define HBPD 		(10)			//Ë®Æ½Í¬²½ĞÅºÅµÄºó¼ç
-#define HFPD 		(19)			//Ë®Æ½Í¬²½ĞÅºÅµÄÇ°¼ç
-#define HSPW 		(30)			//Ë®Æ½Í¬²½ĞÅºÅµÄÂö¿í
+#define HBPD 		(10)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„åè‚©
+#define HFPD 		(19)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define HSPW 		(30)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„è„‰å®½
 
 #define CLKVAL_TFT 	(4) 	
 
-#elif(LCD_Type == LCD57)			// 5.7´çÆÁ
+#elif(LCD_Type == LCD57)			// 5.7å¯¸å±
 
 #define MVAL		(13)
 #define MVAL_USED 	(0)			//0=each frame   1=rate by MVAL
 #define INVVDEN		(1)			//0=normal       1=inverted
 #define BSWP		(0)			//Byte swap control
 #define HWSWP		(1)			//Half word swap control
-#define PNRMODE		(3)			// ÉèÖÃÎªTFTÆÁ
-#define BPPMODE		(12)			// ÉèÖÃÎª16bppÄ£Ê½
+#define PNRMODE		(3)			// è®¾ç½®ä¸ºTFTå±
+#define BPPMODE		(12)			// è®¾ç½®ä¸º16bppæ¨¡å¼
 
 //TFT_SIZE
 #define LCD_XSIZE_TFT 	(320)	
@@ -143,13 +143,13 @@ The initial and control for TFT LCD
 #define SCR_YSIZE_TFT 	(240)
 
 //Timing parameter for 5.7' LCD
-#define VBPD 		(3)			//´¹Ö±Í¬²½ĞÅºÅµÄºó¼ç
-#define VFPD 		(5)			//´¹Ö±Í¬²½ĞÅºÅµÄÇ°¼ç
-#define VSPW 		(15)			//´¹Ö±Í¬²½ĞÅºÅµÄÂö¿í
+#define VBPD 		(3)			//å‚ç›´åŒæ­¥ä¿¡å·çš„åè‚©
+#define VFPD 		(5)			//å‚ç›´åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define VSPW 		(15)			//å‚ç›´åŒæ­¥ä¿¡å·çš„è„‰å®½
 
-#define HBPD 		(5)			//Ë®Æ½Í¬²½ĞÅºÅµÄºó¼ç
-#define HFPD 		(15)			//Ë®Æ½Í¬²½ĞÅºÅµÄÇ°¼ç
-#define HSPW 		(8)			//Ë®Æ½Í¬²½ĞÅºÅµÄÂö¿í
+#define HBPD 		(5)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„åè‚©
+#define HFPD 		(15)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define HSPW 		(8)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„è„‰å®½
 
 #define CLKVAL_TFT 	(7) 	
 
@@ -160,8 +160,8 @@ The initial and control for TFT LCD
 #define INVVDEN		(1)			//0=normal       1=inverted
 #define BSWP		(0)			//Byte swap control
 #define HWSWP		(1)			//Half word swap control
-#define PNRMODE		(3)			// ÉèÖÃÎªTFTÆÁ
-#define BPPMODE		(12)			// ÉèÖÃÎª16bppÄ£Ê½
+#define PNRMODE		(3)			// è®¾ç½®ä¸ºTFTå±
+#define BPPMODE		(12)			// è®¾ç½®ä¸º16bppæ¨¡å¼
 
 //TFT_SIZE
 #define LCD_XSIZE_TFT 	(640)	
@@ -171,25 +171,25 @@ The initial and control for TFT LCD
 #define SCR_YSIZE_TFT 	(480)
 
 //Timing parameter for VGA
-#define VBPD 		(29)			//´¹Ö±Í¬²½ĞÅºÅµÄºó¼ç
-#define VFPD 		(5)			//´¹Ö±Í¬²½ĞÅºÅµÄÇ°¼ç
-#define VSPW 		(4)			//´¹Ö±Í¬²½ĞÅºÅµÄÂö¿í
+#define VBPD 		(29)			//å‚ç›´åŒæ­¥ä¿¡å·çš„åè‚©
+#define VFPD 		(5)			//å‚ç›´åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define VSPW 		(4)			//å‚ç›´åŒæ­¥ä¿¡å·çš„è„‰å®½
 
-#define HBPD 		(71)			//Ë®Æ½Í¬²½ĞÅºÅµÄºó¼ç
-#define HFPD 		(40)			//Ë®Æ½Í¬²½ĞÅºÅµÄÇ°¼ç
-#define HSPW 		(31)			//Ë®Æ½Í¬²½ĞÅºÅµÄÂö¿í
+#define HBPD 		(71)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„åè‚©
+#define HFPD 		(40)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define HSPW 		(31)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„è„‰å®½
 
 #define CLKVAL_TFT 	(1) 	
 
-#elif(LCD_Type == LCDA70)			// 7.0´çÆÁ
+#elif(LCD_Type == LCDA70)			// 7.0å¯¸å±
 
 #define MVAL		(13)
 #define MVAL_USED 	(0)			//0=each frame   1=rate by MVAL
 #define INVVDEN		(1)			//0=normal       1=inverted
 #define BSWP		(0)			//Byte swap control
 #define HWSWP		(1)			//Half word swap control
-#define PNRMODE		(3)			// ÉèÖÃÎªTFTÆÁ
-#define BPPMODE		(12)			// ÉèÖÃÎª16bppÄ£Ê½
+#define PNRMODE		(3)			// è®¾ç½®ä¸ºTFTå±
+#define BPPMODE		(12)			// è®¾ç½®ä¸º16bppæ¨¡å¼
 
 //TFT_SIZE
 #define LCD_XSIZE_TFT 	(800)	
@@ -199,25 +199,25 @@ The initial and control for TFT LCD
 #define SCR_YSIZE_TFT 	(480)
 
 //Timing parameter for 7.0' LCD
-#define VBPD 		(3)			//´¹Ö±Í¬²½ĞÅºÅµÄºó¼ç
-#define VFPD 		(5)			//´¹Ö±Í¬²½ĞÅºÅµÄÇ°¼ç
-#define VSPW 		(15)			//´¹Ö±Í¬²½ĞÅºÅµÄÂö¿í
+#define VBPD 		(3)			//å‚ç›´åŒæ­¥ä¿¡å·çš„åè‚©
+#define VFPD 		(5)			//å‚ç›´åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define VSPW 		(15)			//å‚ç›´åŒæ­¥ä¿¡å·çš„è„‰å®½
 
-#define HBPD 		(5)			//Ë®Æ½Í¬²½ĞÅºÅµÄºó¼ç
-#define HFPD 		(15)			//Ë®Æ½Í¬²½ĞÅºÅµÄÇ°¼ç
-#define HSPW 		(8)			//Ë®Æ½Í¬²½ĞÅºÅµÄÂö¿í
+#define HBPD 		(5)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„åè‚©
+#define HFPD 		(15)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define HSPW 		(8)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„è„‰å®½
 
 #define CLKVAL_TFT 	(7) 	
 
-#elif(LCD_Type == LCDA104)			// 10.4´çÆÁ
+#elif(LCD_Type == LCDA104)			// 10.4å¯¸å±
 
 #define MVAL		(13)
 #define MVAL_USED 	(0)			//0=each frame   1=rate by MVAL
 #define INVVDEN		(1)			//0=normal       1=inverted
 #define BSWP		(0)			//Byte swap control
 #define HWSWP		(1)			//Half word swap control
-#define PNRMODE		(3)			// ÉèÖÃÎªTFTÆÁ
-#define BPPMODE		(12)			// ÉèÖÃÎª16bppÄ£Ê½
+#define PNRMODE		(3)			// è®¾ç½®ä¸ºTFTå±
+#define BPPMODE		(12)			// è®¾ç½®ä¸º16bppæ¨¡å¼
 
 //TFT_SIZE
 #define LCD_XSIZE_TFT 	(800)	
@@ -227,13 +227,13 @@ The initial and control for TFT LCD
 #define SCR_YSIZE_TFT 	(600)
 
 //Timing parameter for 4.3' LCD
-#define VBPD 		(5)			//´¹Ö±Í¬²½ĞÅºÅµÄºó¼ç
-#define VFPD 		(6)			//´¹Ö±Í¬²½ĞÅºÅµÄÇ°¼ç
-#define VSPW 		(1)			//´¹Ö±Í¬²½ĞÅºÅµÄÂö¿í
+#define VBPD 		(5)			//å‚ç›´åŒæ­¥ä¿¡å·çš„åè‚©
+#define VFPD 		(6)			//å‚ç›´åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define VSPW 		(1)			//å‚ç›´åŒæ­¥ä¿¡å·çš„è„‰å®½
 
-#define HBPD 		(28)			//Ë®Æ½Í¬²½ĞÅºÅµÄºó¼ç
-#define HFPD 		(14)			//Ë®Æ½Í¬²½ĞÅºÅµÄÇ°¼ç
-#define HSPW 		(180)			//Ë®Æ½Í¬²½ĞÅºÅµÄÂö¿í
+#define HBPD 		(28)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„åè‚©
+#define HFPD 		(14)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„å‰è‚©
+#define HSPW 		(180)			//æ°´å¹³åŒæ­¥ä¿¡å·çš„è„‰å®½
 
 #define CLKVAL_TFT 	(3) 	
 
@@ -263,16 +263,16 @@ void Lcd_Init(void);
 
 void __irq AdcTsAuto(void);
 
-#if((LCD_Type == LCDW35) || (LCD_Type == LCDS35))	// 3.5´çÆÁ
-	extern unsigned char TQ_LOGO_320240[];//×Ô¶¨ÒåµÄÍ¼Æ¬
-#elif(LCD_Type == LCDT35)				// 3.5´çÆÁ
-	extern unsigned char TQ_LOGO_240320[];//×Ô¶¨ÒåµÄÍ¼Æ¬
-#elif(LCD_Type == LCDW43)				// 3.5´çÆÁ
-	extern unsigned char TQ_LOGO_480272[];//×Ô¶¨ÒåµÄÍ¼Æ¬
+#if((LCD_Type == LCDW35) || (LCD_Type == LCDS35))	// 3.5å¯¸å±
+	extern unsigned char TQ_LOGO_320240[];//è‡ªå®šä¹‰çš„å›¾ç‰‡
+#elif(LCD_Type == LCDT35)				// 3.5å¯¸å±
+	extern unsigned char TQ_LOGO_240320[];//è‡ªå®šä¹‰çš„å›¾ç‰‡
+#elif(LCD_Type == LCDW43)				// 3.5å¯¸å±
+	extern unsigned char TQ_LOGO_480272[];//è‡ªå®šä¹‰çš„å›¾ç‰‡
 #elif(LCD_Type == VGA)					//VGA
-	extern unsigned char TQ_LOGO_640480[];//×Ô¶¨ÒåµÄÍ¼Æ¬
-#elif(LCD_Type == LCDA70)				// 7´çÆÁ
-	extern unsigned char TQ_LOGO_800480[];//×Ô¶¨ÒåµÄÍ¼Æ¬
+	extern unsigned char TQ_LOGO_640480[];//è‡ªå®šä¹‰çš„å›¾ç‰‡
+#elif(LCD_Type == LCDA70)				// 7å¯¸å±
+	extern unsigned char TQ_LOGO_800480[];//è‡ªå®šä¹‰çš„å›¾ç‰‡
 #endif
 
 

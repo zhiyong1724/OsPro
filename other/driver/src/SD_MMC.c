@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <string.h>
 #include "option.h"
 #include "2440addr.h"
@@ -6,13 +6,13 @@
 #include "SD_MMC.h"
 
 /********************************************************
-	ºê¶¨Òå
+	å®å®šä¹‰
 ********************************************************/
 #define __SD_MMC_DEBUG__
 #define SDCard_BlockSize	9
 #define SDCARD_BUFF_SIZE	512
 /********************************************************
-	±äÁ¿¶¨Òå
+	å˜é‡å®šä¹‰
 ********************************************************/
 volatile int iSD_MMC_RCA;
 sSD_struct SDCard;
@@ -30,13 +30,13 @@ void Test_SDI(void)
 	if(SDinit())
 	{
 		#ifdef __SD_MMC_DEBUG__
-		Uart_Printf("¿¨³õÊ¼»¯Íê±Ï£¡\n");
+		Uart_Printf("å¡åˆå§‹åŒ–å®Œæ¯•ï¼\n");
 		#endif
 	}
 	else
 	{
 		#ifdef __SD_MMC_DEBUG__
-		Uart_Printf("¿¨³õÊ¼»¯Ê§°Ü£¡\n");
+		Uart_Printf("å¡åˆå§‹åŒ–å¤±è´¥ï¼\n");
 		#endif
 		return;
 	}
@@ -104,14 +104,14 @@ void Test_SDI(void)
 #endif
 
 /********************************************************
-	API¶¨Òå
+	APIå®šä¹‰
 ********************************************************/
 
 /**********************************************
-¹¦ÄÜ£º¼ì²éSDIOÃüÁî·¢ËÍ£¬½ÓÊÕÊÇ·ñ½áÊø
-Èë¿Ú£ºcmd:ÃüÁî be_resp£º=1ÓÐÓ¦´ð =0ÎÞÓ¦´ð
-³ö¿Ú£º=0Ó¦´ð³¬Ê± =1Ö´ÐÐ³É¹¦
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šæ£€æŸ¥SDIOå‘½ä»¤å‘é€ï¼ŒæŽ¥æ”¶æ˜¯å¦ç»“æŸ
+å…¥å£ï¼šcmd:å‘½ä»¤ be_respï¼š=1æœ‰åº”ç­” =0æ— åº”ç­”
+å‡ºå£ï¼š=0åº”ç­”è¶…æ—¶ =1æ‰§è¡ŒæˆåŠŸ
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 int Chk_CMD_End(int cmd, int be_resp)
 {
@@ -163,10 +163,10 @@ int Chk_CMD_End(int cmd, int be_resp)
 }
 
 /**********************************************
-¹¦ÄÜ£ºÊ¹¿¨½øÈëIDEL×´Ì¬
-Èë¿Ú£ºÎÞ
-³ö¿Ú£ºÎÞ
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šä½¿å¡è¿›å…¥IDELçŠ¶æ€
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼šæ— 
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 void CMD0(void)
 {
@@ -178,10 +178,10 @@ void CMD0(void)
 }
 
 /**********************************************
-¹¦ÄÜ£ºMMC¿¨¼ì²â
-Èë¿Ú£ºÎÞ
-³ö¿Ú£º=1:MMC¿¨ =0:·ÇMMC¿¨
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šMMCå¡æ£€æµ‹
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼š=1:MMCå¡ =0:éžMMCå¡
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD1(void)
 {
@@ -202,12 +202,12 @@ U8 CMD1(void)
 }
 
 /**********************************************
-¹¦ÄÜ£º¼ì²â¿¨ÀàÐÍ¡¢¹Ì¼þ°æ±¾¡¢¹¤×÷µçÑ¹×´¿ö
-Èë¿Ú£ºÎÞ
-³ö¿Ú£º	=1£ºSD V1.X»òMMC
-		=2£º±ê×¼SD¿¨»òSDHC V2.0  
-		=0£ºÎÞÐ§¿¨
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šæ£€æµ‹å¡ç±»åž‹ã€å›ºä»¶ç‰ˆæœ¬ã€å·¥ä½œç”µåŽ‹çŠ¶å†µ
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼š	=1ï¼šSD V1.Xæˆ–MMC
+		=2ï¼šæ ‡å‡†SDå¡æˆ–SDHC V2.0  
+		=0ï¼šæ— æ•ˆå¡
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD8(void)	
 {
@@ -226,10 +226,10 @@ U8 CMD8(void)
 }
 
 /**********************************************
-¹¦ÄÜ£º¼ì²â¿¨ÊÇ·ñ²åÈë
-Èë¿Ú£ºiRCA:RCA
-³ö¿Ú£º=0£º³É¹¦ =1£ºÊ§°Ü
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šæ£€æµ‹å¡æ˜¯å¦æ’å…¥
+å…¥å£ï¼šiRCA:RCA
+å‡ºå£ï¼š=0ï¼šæˆåŠŸ =1ï¼šå¤±è´¥
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD55(U16 iRCA)	
 {
@@ -243,12 +243,12 @@ U8 CMD55(U16 iRCA)
 	return 1;
 }
 /**********************************************
-¹¦ÄÜ£º¼ì²âSD¿¨ÉÏµç×´Ì¬
-Èë¿Ú£ºiRCA:RCA
-³ö¿Ú£º=0Ó¦´ð´íÎó»òÕß¿¨ÕýÃ¦
-	  =1±ê×¼SD¿¨
+åŠŸèƒ½ï¼šæ£€æµ‹SDå¡ä¸Šç”µçŠ¶æ€
+å…¥å£ï¼šiRCA:RCA
+å‡ºå£ï¼š=0åº”ç­”é”™è¯¯æˆ–è€…å¡æ­£å¿™
+	  =1æ ‡å‡†SDå¡
 	  =2SDHC V2.0
-ËµÃ÷£ºÎÞ
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 ACMD41(U16 iRCA)	
 {
@@ -266,9 +266,9 @@ U8 ACMD41(U16 iRCA)
 		if(rSDIRSP0==0xc0ff8000)
 			cReturn = 2;	//SDHC
 		else if(rSDIRSP0==0x80ff8000)
-			cReturn = 1;	//±ê×¼SD
+			cReturn = 1;	//æ ‡å‡†SD
 		else
-			cReturn = 0;	//Ó¦´ð´íÎó
+			cReturn = 0;	//åº”ç­”é”™è¯¯
 		
 		rSDICSTA = 0xa00;	// Clear cmd_end(with rsp)
 		return cReturn;	// Success	    
@@ -278,10 +278,10 @@ U8 ACMD41(U16 iRCA)
 	return 0;
 }
 /**********************************************
-¹¦ÄÜ£º»ñÈ¡¿¨ÄÚCID¼Ä´æÆ÷µÄÊý¾Ý
-Èë¿Ú£ºÎÞ
-³ö¿Ú£º=0Ê§°Ü =1³É¹¦
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šèŽ·å–å¡å†…CIDå¯„å­˜å™¨çš„æ•°æ®
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼š=0å¤±è´¥ =1æˆåŠŸ
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD2(U8 *cCID_Info)	
 {
@@ -312,10 +312,10 @@ U8 CMD2(U8 *cCID_Info)
 	return 1;
 }
 /**********************************************
-¹¦ÄÜ£º¸øSD¿¨Éè¶¨Ò»¸öµØÖ·(RCA)
-Èë¿Ú£ºiCardType = 0:SD¿¨£¬=1:MMC¿¨
-³ö¿Ú£º=0 Ê§°Ü =1 ³É¹¦
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šç»™SDå¡è®¾å®šä¸€ä¸ªåœ°å€(RCA)
+å…¥å£ï¼šiCardType = 0:SDå¡ï¼Œ=1:MMCå¡
+å‡ºå£ï¼š=0 å¤±è´¥ =1 æˆåŠŸ
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD3(U16 iCardType,U16 *iRCA)	
 {
@@ -342,10 +342,10 @@ U8 CMD3(U16 iCardType,U16 *iRCA)
 		return 1;
 }
 /**********************************************
-¹¦ÄÜ£ºÈÃ¿¨½øÈëÑ¡ÖÐ×´Ì¬
-Èë¿Ú£ºcSorD = 0:²»ÐèÒªÓ¦´ð = 1£ºÒªÓ¦´ð
-³ö¿Ú£ºÎÞ
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šè®©å¡è¿›å…¥é€‰ä¸­çŠ¶æ€
+å…¥å£ï¼šcSorD = 0:ä¸éœ€è¦åº”ç­” = 1ï¼šè¦åº”ç­”
+å‡ºå£ï¼šæ— 
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD7(U8 cSorD,U16 iRCA)	
 {
@@ -377,10 +377,10 @@ U8 CMD7(U8 cSorD,U16 iRCA)
 	}
 }
 /**********************************************
-¹¦ÄÜ£º»ñÈ¡¿¨ÄÚ×´Ì¬
-Èë¿Ú£ºÎÞ
-³ö¿Ú£º¿¨×´Ì¬·Ç0Öµ
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šèŽ·å–å¡å†…çŠ¶æ€
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼šå¡çŠ¶æ€éž0å€¼
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U16 CMD13(U16 iRCA)	
 {
@@ -395,11 +395,11 @@ U16 CMD13(U16 iRCA)
 }
 
 /**********************************************
-¹¦ÄÜ£ºÉè¶¨Êý¾Ý×ÜÏßÎ»¿í
-Èë¿Ú£ºBusWidth =0£º1bit =1£º4bit
+åŠŸèƒ½ï¼šè®¾å®šæ•°æ®æ€»çº¿ä½å®½
+å…¥å£ï¼šBusWidth =0ï¼š1bit =1ï¼š4bit
 		iRCA:RCA
-³ö¿Ú£º=0£ºÊ§°Ü =1£º³É¹¦
-ËµÃ÷£ºÎÞ
+å‡ºå£ï¼š=0ï¼šå¤±è´¥ =1ï¼šæˆåŠŸ
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 ACMD6(U8 BusWidth,U16 iRCA)	
 {
@@ -415,10 +415,10 @@ U8 ACMD6(U8 BusWidth,U16 iRCA)
 	return 1;
 }
 /**********************************************
-¹¦ÄÜ£º»ñÈ¡¿¨µÄCSD¼Ä´æÆ÷µÄÖµ
-Èë¿Ú£ºiRCA:¿¨µÄRCA lCSD£º¶ÁÈ¡µÄCSD»º´æ
-³ö¿Ú£º=0Ê§°Ü =1³É¹¦
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šèŽ·å–å¡çš„CSDå¯„å­˜å™¨çš„å€¼
+å…¥å£ï¼šiRCA:å¡çš„RCA lCSDï¼šè¯»å–çš„CSDç¼“å­˜
+å‡ºå£ï¼š=0å¤±è´¥ =1æˆåŠŸ
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD9(U16 iRCA,U32 *lCSD)	
 {
@@ -436,16 +436,16 @@ U8 CMD9(U16 iRCA,U32 *lCSD)
 }
 
 /**********************************************
-¹¦ÄÜ£º¶ÁÈ¡Ò»¸öÊý¾Ý¿é
-Èë¿Ú£ºÆðÊ¼µØÖ·
-³ö¿Ú£º=1£º³É¹¦ =0£ºÊ§°Ü
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šè¯»å–ä¸€ä¸ªæ•°æ®å—
+å…¥å£ï¼šèµ·å§‹åœ°å€
+å‡ºå£ï¼š=1ï¼šæˆåŠŸ =0ï¼šå¤±è´¥
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD17(U32 Addr)	
 {
-    //STEP1:·¢ËÍÖ¸Áî 
-    rSDICARG = Addr;				//Éè¶¨Ö¸Áî²ÎÊý 
-    rSDICCON = (1<<9)|(1<<8)|0X51;	//·¢ËÍCMD17Ö¸Áî
+    //STEP1:å‘é€æŒ‡ä»¤ 
+    rSDICARG = Addr;				//è®¾å®šæŒ‡ä»¤å‚æ•° 
+    rSDICCON = (1<<9)|(1<<8)|0X51;	//å‘é€CMD17æŒ‡ä»¤
     
     if(Chk_CMD_End(17,1))
     	return 1;
@@ -453,16 +453,16 @@ U8 CMD17(U32 Addr)
     	return 0;
 }
 /**********************************************
-¹¦ÄÜ£º¶ÁÈ¡¶à¸öÊý¾Ý¿é
-Èë¿Ú£ºÆðÊ¼µØÖ·
-³ö¿Ú£º=1£º³É¹¦ =0£ºÊ§°Ü
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šè¯»å–å¤šä¸ªæ•°æ®å—
+å…¥å£ï¼šèµ·å§‹åœ°å€
+å‡ºå£ï¼š=1ï¼šæˆåŠŸ =0ï¼šå¤±è´¥
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD18(U32 Addr)	
 {
-    //STEP1:·¢ËÍÖ¸Áî 
-    rSDICARG = Addr;				//Éè¶¨Ö¸Áî²ÎÊý 
-    rSDICCON = (1<<9)|(1<<8)|0X52;	//·¢ËÍCMD17Ö¸Áî
+    //STEP1:å‘é€æŒ‡ä»¤ 
+    rSDICARG = Addr;				//è®¾å®šæŒ‡ä»¤å‚æ•° 
+    rSDICCON = (1<<9)|(1<<8)|0X52;	//å‘é€CMD17æŒ‡ä»¤
     
     if(Chk_CMD_End(18,1))
     	return 1;
@@ -470,10 +470,10 @@ U8 CMD18(U32 Addr)
     	return 0;
 }
 /**********************************************
-¹¦ÄÜ£ºÍ£Ö¹Êý¾Ý´«Êä
-Èë¿Ú£ºÎÞ
-³ö¿Ú£º=1£º³É¹¦ =0£ºÊ§°Ü
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šåœæ­¢æ•°æ®ä¼ è¾“
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼š=1ï¼šæˆåŠŸ =0ï¼šå¤±è´¥
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD12(void)	
 {
@@ -487,16 +487,16 @@ U8 CMD12(void)
 	return 1;
 }
 /**********************************************
-¹¦ÄÜ£ºÐ´ÈëÒ»¸öÊý¾Ý¿é
-Èë¿Ú£ºÎÞ
-³ö¿Ú£º=1£º³É¹¦ =0£ºÊ§°Ü
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šå†™å…¥ä¸€ä¸ªæ•°æ®å—
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼š=1ï¼šæˆåŠŸ =0ï¼šå¤±è´¥
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD24(U32 Addr)	
 {
-    //STEP1:·¢ËÍÖ¸Áî 
-    rSDICARG = Addr;				//Éè¶¨Ö¸Áî²ÎÊý 
-    rSDICCON = (1<<9)|(1<<8)|0x58;	//·¢ËÍCMD24Ö¸Áî
+    //STEP1:å‘é€æŒ‡ä»¤ 
+    rSDICARG = Addr;				//è®¾å®šæŒ‡ä»¤å‚æ•° 
+    rSDICCON = (1<<9)|(1<<8)|0x58;	//å‘é€CMD24æŒ‡ä»¤
     
     if(Chk_CMD_End(24,1))
     	return 1;
@@ -504,16 +504,16 @@ U8 CMD24(U32 Addr)
     	return 0;
 }
 /**********************************************
-¹¦ÄÜ£ºÐ´Èë¶à¸öÊý¾Ý¿é
-Èë¿Ú£ºÎÞ
-³ö¿Ú£º=1£º³É¹¦ =0£ºÊ§°Ü
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šå†™å…¥å¤šä¸ªæ•°æ®å—
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼š=1ï¼šæˆåŠŸ =0ï¼šå¤±è´¥
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD25(U32 Addr)	
 {
-    //STEP1:·¢ËÍÖ¸Áî 
-    rSDICARG = Addr;				//Éè¶¨Ö¸Áî²ÎÊý 
-    rSDICCON = (1<<9)|(1<<8)|0x59;	//·¢ËÍCMD25Ö¸Áî
+    //STEP1:å‘é€æŒ‡ä»¤ 
+    rSDICARG = Addr;				//è®¾å®šæŒ‡ä»¤å‚æ•° 
+    rSDICCON = (1<<9)|(1<<8)|0x59;	//å‘é€CMD25æŒ‡ä»¤
     
     if(Chk_CMD_End(25,1))
     	return 1;
@@ -521,16 +521,16 @@ U8 CMD25(U32 Addr)
     	return 0;
 }
 /**********************************************
-¹¦ÄÜ£ºÉèÖÃ²Á³ýÆðÊ¼µØÖ·
-Èë¿Ú£ºÎÞ
-³ö¿Ú£º=1£º³É¹¦ =0£ºÊ§°Ü
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šè®¾ç½®æ“¦é™¤èµ·å§‹åœ°å€
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼š=1ï¼šæˆåŠŸ =0ï¼šå¤±è´¥
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD32(U32 Addr)	
 {
-    //STEP1:·¢ËÍÖ¸Áî 
-    rSDICARG = Addr;				//Éè¶¨Ö¸Áî²ÎÊý 
-    rSDICCON = (1<<9)|(1<<8)|0x60;	//·¢ËÍCMD32Ö¸Áî
+    //STEP1:å‘é€æŒ‡ä»¤ 
+    rSDICARG = Addr;				//è®¾å®šæŒ‡ä»¤å‚æ•° 
+    rSDICCON = (1<<9)|(1<<8)|0x60;	//å‘é€CMD32æŒ‡ä»¤
     
     if(Chk_CMD_End(32,1))
     	return 1;
@@ -538,16 +538,16 @@ U8 CMD32(U32 Addr)
     	return 0;
 }
 /**********************************************
-¹¦ÄÜ£ºÉèÖÃ²Á³ýÖÕÖ¹µØÖ·
-Èë¿Ú£ºÎÞ
-³ö¿Ú£º=1£º³É¹¦ =0£ºÊ§°Ü
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šè®¾ç½®æ“¦é™¤ç»ˆæ­¢åœ°å€
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼š=1ï¼šæˆåŠŸ =0ï¼šå¤±è´¥
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD33(U32 Addr)	
 { 
-    //STEP1:·¢ËÍÖ¸Áî 
-    rSDICARG = Addr;				//Éè¶¨Ö¸Áî²ÎÊý 
-    rSDICCON = (1<<9)|(1<<8)|0x61;	//·¢ËÍCMD33Ö¸Áî
+    //STEP1:å‘é€æŒ‡ä»¤ 
+    rSDICARG = Addr;				//è®¾å®šæŒ‡ä»¤å‚æ•° 
+    rSDICCON = (1<<9)|(1<<8)|0x61;	//å‘é€CMD33æŒ‡ä»¤
     
     if(Chk_CMD_End(33,1))
     	return 1;
@@ -555,16 +555,16 @@ U8 CMD33(U32 Addr)
     	return 0;
 }
 /**********************************************
-¹¦ÄÜ£º²Á³ý¿¨ÄÚÖ¸¶¨ÇøÓòµÄÊý¾Ý
-Èë¿Ú£ºÎÞ
-³ö¿Ú£º=1£º³É¹¦ =0£ºÊ§°Ü
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šæ“¦é™¤å¡å†…æŒ‡å®šåŒºåŸŸçš„æ•°æ®
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼š=1ï¼šæˆåŠŸ =0ï¼šå¤±è´¥
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 CMD38(void)		
 { 
-    //STEP1:·¢ËÍÖ¸Áî 
-    rSDICARG = 0;					//Éè¶¨Ö¸Áî²ÎÊý 
-    rSDICCON = (1<<9)|(1<<8)|0x66;	//·¢ËÍCMD38Ö¸Áî
+    //STEP1:å‘é€æŒ‡ä»¤ 
+    rSDICARG = 0;					//è®¾å®šæŒ‡ä»¤å‚æ•° 
+    rSDICCON = (1<<9)|(1<<8)|0x66;	//å‘é€CMD38æŒ‡ä»¤
     
     if(Chk_CMD_End(38,1))
     	return 1;
@@ -574,11 +574,11 @@ U8 CMD38(void)
 
 
 /**********************************************
-¹¦ÄÜ£ºËø¶¨»òÕß½âËøSD¿¨
-Èë¿Ú£ºcSelDesel = 1:Ëø¶¨ =0½âËø
+åŠŸèƒ½ï¼šé”å®šæˆ–è€…è§£é”SDå¡
+å…¥å£ï¼šcSelDesel = 1:é”å®š =0è§£é”
        iCardRCA: CARD RCA
-³ö¿Ú£º=1£º³É¹¦ =0£ºÊ§°Ü
-ËµÃ÷£ºÎÞ
+å‡ºå£ï¼š=1ï¼šæˆåŠŸ =0ï¼šå¤±è´¥
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 Card_sel_desel(U8 cSelDesel,U16 iCardRCA)
 {
@@ -590,11 +590,11 @@ U8 Card_sel_desel(U8 cSelDesel,U16 iCardRCA)
 
 
 /**********************************************
-¹¦ÄÜ£ºÉèÖÃ¿¨Í¨ÐÅ¿í¶È
-Èë¿Ú£ºcCardType ¿¨ÀàÐÍ
-      cBusWidth =0£º1bit =1£º4bit
-³ö¿Ú£º=1£º³É¹¦ =0£ºÊ§°Ü
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šè®¾ç½®å¡é€šä¿¡å®½åº¦
+å…¥å£ï¼šcCardType å¡ç±»åž‹
+      cBusWidth =0ï¼š1bit =1ï¼š4bit
+å‡ºå£ï¼š=1ï¼šæˆåŠŸ =0ï¼šå¤±è´¥
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 Set_bus_Width(U8 cCardType,U8 cBusWidth,U16 iRCA)
 {
@@ -608,23 +608,23 @@ U8 Set_bus_Width(U8 cCardType,U8 cBusWidth,U16 iRCA)
 
 
 /**********************************************************************************
-¹¦  ÄÜ£º¸Ãº¯ÊýÓÃÓÚ´ÓSD¿¨ÖÐ¶Á³öÖ¸¶¨¿éÆðÊ¼µØÖ·µÄµ¥¸öÊý¾Ý¿é
-²Î  Êý£º
- U32  Addr  ±»¶Á¿éµÄÆðÊ¼µØÖ·
- U32* RxBuffer ÓÃÓÚ½ÓÊÕ¶Á³öÊý¾ÝµÄ»º³åÇø
-·µ»ØÖµ£º
- 0 ¶Á¿é²Ù×÷²»³É¹¦
- 1 ¶Á¿é²Ù×÷³É¹¦
-¾Ù  Àý£º
- ÔÚÖ÷µ÷º¯ÊýÖÐ¶¨ÒåÒ»¸öÊý×é×÷Îª½ÓÊÕ»º³åÇø£¬ÈçU32 Rx_buffer[BlockSize];
- È»ºó¿ªÊ¼µ÷ÓÃRead_One_Block(addr,Rx_buffer);
+åŠŸ  èƒ½ï¼šè¯¥å‡½æ•°ç”¨äºŽä»ŽSDå¡ä¸­è¯»å‡ºæŒ‡å®šå—èµ·å§‹åœ°å€çš„å•ä¸ªæ•°æ®å—
+å‚  æ•°ï¼š
+ U32  Addr  è¢«è¯»å—çš„èµ·å§‹åœ°å€
+ U32* RxBuffer ç”¨äºŽæŽ¥æ”¶è¯»å‡ºæ•°æ®çš„ç¼“å†²åŒº
+è¿”å›žå€¼ï¼š
+ 0 è¯»å—æ“ä½œä¸æˆåŠŸ
+ 1 è¯»å—æ“ä½œæˆåŠŸ
+ä¸¾  ä¾‹ï¼š
+ åœ¨ä¸»è°ƒå‡½æ•°ä¸­å®šä¹‰ä¸€ä¸ªæ•°ç»„ä½œä¸ºæŽ¥æ”¶ç¼“å†²åŒºï¼Œå¦‚U32 Rx_buffer[BlockSize];
+ ç„¶åŽå¼€å§‹è°ƒç”¨Read_One_Block(addr,Rx_buffer);
 **********************************************************************************/
 U8 Read_One_Block(U32 Addr,U32* RxBuffer)
 {
 	U16 i=0;
 	U32 status=0;
-	U16 BlockSize;			//¶¨Òå¿é´óÐ¡
-	BlockSize=(1<<(SDCard_BlockSize-2)); 	//ÒÔWordÎªµ¥Î»
+	U16 BlockSize;			//å®šä¹‰å—å¤§å°
+	BlockSize=(1<<(SDCard_BlockSize-2)); 	//ä»¥Wordä¸ºå•ä½
 
 
 	rSDIDTIMER=0x7fffff;		// Set timeout count
@@ -632,19 +632,19 @@ U8 Read_One_Block(U32 Addr,U32* RxBuffer)
 	rSDIFSTA=rSDIFSTA|(1<<16);	// FIFO reset
 	rSDIDCON=(1<<SDCard_BlockSize)|(2<<12)|(1<<14)|(1<<16)|(1<<17)|(1<<19)|(2<<22);
 	
-	if(CMD17(Addr)!=1)		//·¢ËÍ¶Áµ¥¸ö¿éÖ¸Áî
+	if(CMD17(Addr)!=1)		//å‘é€è¯»å•ä¸ªå—æŒ‡ä»¤
  		return 0;
  
 	while(i<BlockSize)
-	{ //¿ªÊ¼½ÓÊÕÊý¾Ýµ½»º³åÇø
+	{ //å¼€å§‹æŽ¥æ”¶æ•°æ®åˆ°ç¼“å†²åŒº
 		if(rSDIDSTA&0x60)
-		{ //¼ì²éÊÇ·ñ³¬Ê±ºÍCRCÐ£ÑéÊÇ·ñ³ö´í
-			rSDIDSTA=(0x3<<0x5); //Çå³ý³¬Ê±±êÖ¾ºÍCRC´íÎó±êÖ¾
+		{ //æ£€æŸ¥æ˜¯å¦è¶…æ—¶å’ŒCRCæ ¡éªŒæ˜¯å¦å‡ºé”™
+			rSDIDSTA=(0x3<<0x5); //æ¸…é™¤è¶…æ—¶æ ‡å¿—å’ŒCRCé”™è¯¯æ ‡å¿—
 			return 0;
 		}
 		status=rSDIFSTA;
 		if((status&0x1000)==0x1000)
-		{ //Èç¹û½ÓÊÕFIFOÖÐÓÐÊý¾Ý
+		{ //å¦‚æžœæŽ¥æ”¶FIFOä¸­æœ‰æ•°æ®
 			*RxBuffer=rSDIDAT;
 			RxBuffer++;
 			i++;
@@ -657,18 +657,18 @@ U8 Read_One_Block(U32 Addr,U32* RxBuffer)
 
 
 /********************************************************************************** 
-¹¦ ÄÜ£º¸Ãº¯ÊýÓÃÓÚ´Ó SD ¿¨ÖÐ¶Á³öÖ¸¶¨¿éÆðÊ¼µØÖ·ºÍÊý¾Ý¿éÊýÄ¿µÄ¶à¸öÁ¬ÐøÊý¾Ý¿é£¬µ±Òª¶ÁÈ¡µÄ 
-Êý¾ÝÁ¿Âú×ãÊ±ÔòÍ£Ö¹¶ÁÈ¡¡£ 
-²Î Êý£º 
-U32 Addr ±»¶Á¿éµÄÆðÊ¼µØÖ· 
-U32 DatSize ÆÚ´ý±»¶Á³öµÄÊý¾ÝÊýÄ¿£¬ÒÔ Word Îªµ¥Î» 
-U32* RxBuffer ÓÃÓÚ½ÓÊÕ¶Á³öÊý¾ÝµÄ»º³åÇø 
-·µ»ØÖµ£º 
-0 ¶Á¿é²Ù×÷²»³É¹¦ 
-1 ¶Á¿é²Ù×÷³É¹¦ 
-¾Ù Àý£º 
-ÔÚÖ÷µ÷º¯ÊýÖÐ¶¨ÒåÒ»¸öÊý×é×÷Îª½ÓÊÕ»º³åÇø£¬Èç U32 Rx_buffer[BufferSize]; 
-È»ºó¿ªÊ¼µ÷ÓÃ Read_Mult_Block(addr,BufferSize,Rx_buffer); 
+åŠŸ èƒ½ï¼šè¯¥å‡½æ•°ç”¨äºŽä»Ž SD å¡ä¸­è¯»å‡ºæŒ‡å®šå—èµ·å§‹åœ°å€å’Œæ•°æ®å—æ•°ç›®çš„å¤šä¸ªè¿žç»­æ•°æ®å—ï¼Œå½“è¦è¯»å–çš„ 
+æ•°æ®é‡æ»¡è¶³æ—¶åˆ™åœæ­¢è¯»å–ã€‚ 
+å‚ æ•°ï¼š 
+U32 Addr è¢«è¯»å—çš„èµ·å§‹åœ°å€ 
+U32 DatSize æœŸå¾…è¢«è¯»å‡ºçš„æ•°æ®æ•°ç›®ï¼Œä»¥ Word ä¸ºå•ä½ 
+U32* RxBuffer ç”¨äºŽæŽ¥æ”¶è¯»å‡ºæ•°æ®çš„ç¼“å†²åŒº 
+è¿”å›žå€¼ï¼š 
+0 è¯»å—æ“ä½œä¸æˆåŠŸ 
+1 è¯»å—æ“ä½œæˆåŠŸ 
+ä¸¾ ä¾‹ï¼š 
+åœ¨ä¸»è°ƒå‡½æ•°ä¸­å®šä¹‰ä¸€ä¸ªæ•°ç»„ä½œä¸ºæŽ¥æ”¶ç¼“å†²åŒºï¼Œå¦‚ U32 Rx_buffer[BufferSize]; 
+ç„¶åŽå¼€å§‹è°ƒç”¨ Read_Mult_Block(addr,BufferSize,Rx_buffer); 
 **********************************************************************************/ 
 U8 Read_Mult_Block(U32 Addr,U32 DatSize,U32* RxBuffer)
 { 
@@ -680,19 +680,19 @@ U8 Read_Mult_Block(U32 Addr,U32 DatSize,U32* RxBuffer)
 	rSDIFSTA = rSDIFSTA|(1<<16); // FIFO reset 
 	rSDIDCON = (1<<SDCard_BlockSize)|(2<<12)|(1<<14)|(1<<16)|(1<<17)|(1<<19)|(2<<22); 
 	
-	if(CMD18(Addr)!=1)//·¢ËÍ¶Á¶à¿é²Ù×÷Ö¸Áî 
+	if(CMD18(Addr)!=1)//å‘é€è¯»å¤šå—æ“ä½œæŒ‡ä»¤ 
 		return 0;
 	
 	while(i<DatSize)
-	{//½ÓÊÕÊý¾Ýµ½»º³åÇø 
+	{//æŽ¥æ”¶æ•°æ®åˆ°ç¼“å†²åŒº 
 		if(rSDIDSTA&0x60)
-		{//¼ì²éÊÇ·ñ³¬Ê±ºÍ CRC ÊÇ·ñ³ö´í 
-			rSDIDSTA = (0x3<<0x5);//Çå³ý³¬Ê±±êÖ¾ºÍ CRC ´íÎó±êÖ¾ 
+		{//æ£€æŸ¥æ˜¯å¦è¶…æ—¶å’Œ CRC æ˜¯å¦å‡ºé”™ 
+			rSDIDSTA = (0x3<<0x5);//æ¸…é™¤è¶…æ—¶æ ‡å¿—å’Œ CRC é”™è¯¯æ ‡å¿— 
 			return 0; 
 		} 
 		status = rSDIFSTA; 
 		if((status&0x1000)==0x1000)
-		{//Èç¹û½ÓÊÕ FIFO ÖÐÓÐÊý¾Ý 
+		{//å¦‚æžœæŽ¥æ”¶ FIFO ä¸­æœ‰æ•°æ® 
 			*RxBuffer = rSDIDAT; 
 			RxBuffer++; 
 			i++; 
@@ -702,30 +702,30 @@ U8 Read_Mult_Block(U32 Addr,U32 DatSize,U32* RxBuffer)
 	rSDIFSTA = rSDIFSTA&0x200;//Clear Rx FIFO Last data Ready 
 	rSDIDSTA = 0x10;//Clear data Tx/Rx end detect 
 	
-	while(CMD12()!=1);//·¢ËÍ½áÊøÖ¸Áî 
+	while(CMD12()!=1);//å‘é€ç»“æŸæŒ‡ä»¤ 
 	return 1;
 }
 
 
 /**********************************************************************************
-¹¦  ÄÜ£º¸Ãº¯ÊýÓÃÓÚÏòSD¿¨µÄÒ»¸öÊý¾Ý¿éÐ´ÈëÊý¾Ý
-²Î  Êý£º
- U32  Addr  ±»Ð´¿éµÄÆðÊ¼µØÖ·
- U32* TxBuffer ÓÃÓÚ·¢ËÍÊý¾ÝµÄ»º³åÇø
-·µ»ØÖµ£º
- 0 Êý¾ÝÐ´Èë²Ù×÷Ê§°Ü
- 1 Êý¾ÝÐ´Èë²Ù×÷³É¹¦
-¾Ù  Àý£º
- ÔÚÖ÷µ÷º¯ÊýÖÐ¶¨ÒåÒ»¸öÊý×é×÷Îª·¢ËÍ»º³åÇø£¬ÈçU32 Tx_buffer[BlockSize];
- È»ºó¿ªÊ¼µ÷ÓÃWrite_One_Block(addr,Tx_buffer);
+åŠŸ  èƒ½ï¼šè¯¥å‡½æ•°ç”¨äºŽå‘SDå¡çš„ä¸€ä¸ªæ•°æ®å—å†™å…¥æ•°æ®
+å‚  æ•°ï¼š
+ U32  Addr  è¢«å†™å—çš„èµ·å§‹åœ°å€
+ U32* TxBuffer ç”¨äºŽå‘é€æ•°æ®çš„ç¼“å†²åŒº
+è¿”å›žå€¼ï¼š
+ 0 æ•°æ®å†™å…¥æ“ä½œå¤±è´¥
+ 1 æ•°æ®å†™å…¥æ“ä½œæˆåŠŸ
+ä¸¾  ä¾‹ï¼š
+ åœ¨ä¸»è°ƒå‡½æ•°ä¸­å®šä¹‰ä¸€ä¸ªæ•°ç»„ä½œä¸ºå‘é€ç¼“å†²åŒºï¼Œå¦‚U32 Tx_buffer[BlockSize];
+ ç„¶åŽå¼€å§‹è°ƒç”¨Write_One_Block(addr,Tx_buffer);
 **********************************************************************************/
 U8 Write_One_Block(U32 Addr,U32* TxBuffer)
 {
 	U16 i=0;
 	U32 status = 0;
-	U16 BlockSize; //¶¨Òå¿é´óÐ¡
+	U16 BlockSize; //å®šä¹‰å—å¤§å°
 	
-	BlockSize = (1<<(SDCard_BlockSize-2)); //ÒÔWordÎªµ¥Î»
+	BlockSize = (1<<(SDCard_BlockSize-2)); //ä»¥Wordä¸ºå•ä½
 
 	rSDIDTIMER=0x7fffff;		// Set timeout count
 	rSDIBSIZE=0x200;			// 512byte(128word)
@@ -733,14 +733,14 @@ U8 Write_One_Block(U32 Addr,U32* TxBuffer)
 	rSDIDCON = (1<<SDCard_BlockSize)|(3<<12)|(1<<14)|(1<<16)|(1<<17)|(1<<20)|(2<<22);
 	rSDIDCON = (1<<SDCard_BlockSize)|(3<<12)|(1<<14)|(1<<16)|(1<<17)|(1<<20)|(2<<22);
 	
-	if(CMD24(Addr)!=1) //·¢ËÍÐ´µ¥¿é²Ù×÷Ö¸Áî
+	if(CMD24(Addr)!=1) //å‘é€å†™å•å—æ“ä½œæŒ‡ä»¤
 		return 0;
 	
 	while(i<BlockSize)
-	{ //¿ªÊ¼´«µÝÊý¾Ýµ½»º³åÇø
+	{ //å¼€å§‹ä¼ é€’æ•°æ®åˆ°ç¼“å†²åŒº
 		status=rSDIFSTA;
 		if((status&0x2000)==0x2000)
-		{ //Èç¹û·¢ËÍFIFO¿ÉÓÃ£¬¼´FIFOÎ´Âú
+		{ //å¦‚æžœå‘é€FIFOå¯ç”¨ï¼Œå³FIFOæœªæ»¡
 			rSDIDAT=*TxBuffer;
 			TxBuffer++;
 			i++;
@@ -749,7 +749,7 @@ U8 Write_One_Block(U32 Addr,U32* TxBuffer)
 	rSDIDCON = rSDIDCON&~(7<<12);
  
 	do
-	{ //µÈ´ýÊý¾Ý·¢ËÍ½áÊø
+	{ //ç­‰å¾…æ•°æ®å‘é€ç»“æŸ
 		status=rSDIDSTA;
 	}while((status&0x2)==0x2);
 	rSDIDSTA = status;
@@ -766,17 +766,17 @@ U8 Write_One_Block(U32 Addr,U32* TxBuffer)
 
 
 /********************************************************************************** 
-¹¦ ÄÜ£º¸Ãº¯ÊýÓÃÓÚÏò SD ¿¨µÄ¶à¸öÊý¾Ý¿éÐ´ÈëÊý¾Ý 
-²Î Êý£º 
-	U32 Addr ±»Ð´¿éµÄÆðÊ¼µØÖ· 
-	U32 DatSize ÆÚ´ý±»Ð´ÈëÊý¾ÝµÄÊýÄ¿£¬ÒÔ Word Îªµ¥Î» 
-	U32* TxBuffer ´ý·¢ËÍÊý¾ÝµÄ»º³åÇø 
-·µ»ØÖµ£º 
-	0 Êý¾ÝÐ´Èë²Ù×÷Ê§°Ü 
-	1 Êý¾ÝÐ´Èë²Ù×÷³É¹¦ 
-¾Ù Àý£º 
-ÔÚÖ÷µ÷º¯ÊýÖÐ¶¨ÒåÒ»¸öÊý×é×÷Îª·¢ËÍ»º³åÇø£¬Èç U32 Tx_buffer[BlockSize]; 
-È»ºó¿ªÊ¼µ÷ÓÃ Write_Mult_Block(addr,DatSize,Tx_buffer); 
+åŠŸ èƒ½ï¼šè¯¥å‡½æ•°ç”¨äºŽå‘ SD å¡çš„å¤šä¸ªæ•°æ®å—å†™å…¥æ•°æ® 
+å‚ æ•°ï¼š 
+	U32 Addr è¢«å†™å—çš„èµ·å§‹åœ°å€ 
+	U32 DatSize æœŸå¾…è¢«å†™å…¥æ•°æ®çš„æ•°ç›®ï¼Œä»¥ Word ä¸ºå•ä½ 
+	U32* TxBuffer å¾…å‘é€æ•°æ®çš„ç¼“å†²åŒº 
+è¿”å›žå€¼ï¼š 
+	0 æ•°æ®å†™å…¥æ“ä½œå¤±è´¥ 
+	1 æ•°æ®å†™å…¥æ“ä½œæˆåŠŸ 
+ä¸¾ ä¾‹ï¼š 
+åœ¨ä¸»è°ƒå‡½æ•°ä¸­å®šä¹‰ä¸€ä¸ªæ•°ç»„ä½œä¸ºå‘é€ç¼“å†²åŒºï¼Œå¦‚ U32 Tx_buffer[BlockSize]; 
+ç„¶åŽå¼€å§‹è°ƒç”¨ Write_Mult_Block(addr,DatSize,Tx_buffer); 
 **********************************************************************************/ 
 U8 Write_Mult_Block(U32 Addr,U32 DatSize,U32* TxBuffer)
 { 
@@ -792,14 +792,14 @@ U8 Write_Mult_Block(U32 Addr,U32 DatSize,U32* TxBuffer)
 		rSDIDCON = rSDIDCON| 0x4000; 
 	} 
 	
-	if(CMD25(Addr)!=1)//·¢ËÍÐ´¶à¿é²Ù×÷Ö¸Áî
+	if(CMD25(Addr)!=1)//å‘é€å†™å¤šå—æ“ä½œæŒ‡ä»¤
 		return 0;
 
 	while(i<DatSize)
-	{//¿ªÊ¼´«µÝÊý¾Ýµ½»º³åÇø
+	{//å¼€å§‹ä¼ é€’æ•°æ®åˆ°ç¼“å†²åŒº
 		status = rSDIFSTA; 
 		if((status&0x2000)==0x2000)
-		{//Èç¹û·¢ËÍ FIFO ¿ÉÓÃ£¬¼´ FIFO Î´Âú 
+		{//å¦‚æžœå‘é€ FIFO å¯ç”¨ï¼Œå³ FIFO æœªæ»¡ 
 			rSDIDAT = *TxBuffer; 
 			TxBuffer++; 
 			i++; 
@@ -807,10 +807,10 @@ U8 Write_Mult_Block(U32 Addr,U32 DatSize,U32* TxBuffer)
 	} 
 	rSDIDCON = rSDIDCON&~(7<<12); 
 	
-	while(CMD12()!=1);//·¢ËÍ½áÊøÖ¸Áî 
+	while(CMD12()!=1);//å‘é€ç»“æŸæŒ‡ä»¤ 
 	
 	do
-	{//µÈ´ýÊý¾Ý·¢ËÍ½áÊø 
+	{//ç­‰å¾…æ•°æ®å‘é€ç»“æŸ 
 		status = rSDIDSTA; 
 	}while((status&0x2)==0x2); 
 	
@@ -830,17 +830,17 @@ U8 Write_Mult_Block(U32 Addr,U32 DatSize,U32* TxBuffer)
 
 
 /********************************************************************************** 
-¹¦ ÄÜ£º¸Ãº¯ÊýÓÃÓÚ²Á³ýÖ¸¶¨µØÖ·Çø¼äµÄÊý¾Ý 
-²Î Êý£º 
-	U32 StartAddr ²Á³ýµÄÆðÊ¼µØÖ· 
-	U32 EndAddr ²Á³ýµÄ½áÊøµØÖ· 
-·µ»ØÖµ£º 
-	0 ²Á³ý²Ù×÷³É¹¦ 
-	1 ²Á³ý²Ù×÷Ê§°Ü 
-×¢ Òâ£º 
-	ÆðÊ¼ºÍ½áÊøµØÖ·×îºÃÓëÉÈÇø¶ÔÆë£¬²Á³ýµÄ×îÐ¡µ¥Î»ÊÇÉÈÇø£¬Èç¹ûÆðÊ¼ÓÚ½áÊøµØÖ·²îÒ»¸öÉÈÇøµÄ´ó
-	Ð¡£¬µ«ÓÉÓÚÃ»ÓÐÓëÉÈÇø¶ÔÆë£¬´Ó¶øÊ¹ÆðÊ¼µØÖ·ºÍ½áÊøµØÖ·¿ç¶ÈÎªÁ½¸öÉÈÇø£¬ÄÇÃ´ÕâÁ½¸öÉÈÇø½«»á 
-	±»²Á³ý¡£ 
+åŠŸ èƒ½ï¼šè¯¥å‡½æ•°ç”¨äºŽæ“¦é™¤æŒ‡å®šåœ°å€åŒºé—´çš„æ•°æ® 
+å‚ æ•°ï¼š 
+	U32 StartAddr æ“¦é™¤çš„èµ·å§‹åœ°å€ 
+	U32 EndAddr æ“¦é™¤çš„ç»“æŸåœ°å€ 
+è¿”å›žå€¼ï¼š 
+	0 æ“¦é™¤æ“ä½œæˆåŠŸ 
+	1 æ“¦é™¤æ“ä½œå¤±è´¥ 
+æ³¨ æ„ï¼š 
+	èµ·å§‹å’Œç»“æŸåœ°å€æœ€å¥½ä¸Žæ‰‡åŒºå¯¹é½ï¼Œæ“¦é™¤çš„æœ€å°å•ä½æ˜¯æ‰‡åŒºï¼Œå¦‚æžœèµ·å§‹äºŽç»“æŸåœ°å€å·®ä¸€ä¸ªæ‰‡åŒºçš„å¤§
+	å°ï¼Œä½†ç”±äºŽæ²¡æœ‰ä¸Žæ‰‡åŒºå¯¹é½ï¼Œä»Žè€Œä½¿èµ·å§‹åœ°å€å’Œç»“æŸåœ°å€è·¨åº¦ä¸ºä¸¤ä¸ªæ‰‡åŒºï¼Œé‚£ä¹ˆè¿™ä¸¤ä¸ªæ‰‡åŒºå°†ä¼š 
+	è¢«æ“¦é™¤ã€‚ 
 **********************************************************************************/ 
 U8 Erase_Block(U32 StartAddr,U32 EndAddr)
 { 
@@ -854,10 +854,10 @@ U8 Erase_Block(U32 StartAddr,U32 EndAddr)
 } 
 
 /**********************************************
-¹¦ÄÜ£ºSD¿¨³õÊ¼»¯
-Èë¿Ú£ºÎÞ
-³ö¿Ú£º=0Ê§°Ü =1³É¹¦
-ËµÃ÷£ºÎÞ
+åŠŸèƒ½ï¼šSDå¡åˆå§‹åŒ–
+å…¥å£ï¼šæ— 
+å‡ºå£ï¼š=0å¤±è´¥ =1æˆåŠŸ
+è¯´æ˜Žï¼šæ— 
 **********************************************/
 U8 SDinit(void) 
 {
@@ -932,8 +932,8 @@ U8 SDinit(void)
 		Uart_Printf("CID\n");
 		Uart_Printf("MID = %d\n",SDCard.cCardCID[0]);
 		Uart_Printf("OLD = %d\n",(SDCard.cCardCID[1]*0X100)+SDCard.cCardCID[2]);
-		Uart_Printf("Éú²ú³§¼Ò:%s\n",(SDCard.cCardCID+3));
-		Uart_Printf("Éú²úÈÕÆÚ:20%d,%d\n",((SDCard.cCardCID[13]&0x0f)<<4)+((SDCard.cCardCID[14]&0xf0)>>4),(SDCard.cCardCID[14]&0x0f));
+		Uart_Printf("ç”Ÿäº§åŽ‚å®¶:%s\n",(SDCard.cCardCID+3));
+		Uart_Printf("ç”Ÿäº§æ—¥æœŸ:20%d,%d\n",((SDCard.cCardCID[13]&0x0f)<<4)+((SDCard.cCardCID[14]&0xf0)>>4),(SDCard.cCardCID[14]&0x0f));
 		#endif
 	}
 	else
@@ -1003,7 +1003,7 @@ U8 SDinit(void)
 		Uart_Printf("0x%08x\n",SDCard.lCardCSD[1]);
 		Uart_Printf("0x%08x\n",SDCard.lCardCSD[2]);
 		Uart_Printf("0x%08x\n",SDCard.lCardCSD[3]);
-		Uart_Printf("¿¨ÈÝÁ¿Îª:%dKB,%dMB\n",SDCard.lCardSize,SDCard.lCardSize/1024);
+		Uart_Printf("å¡å®¹é‡ä¸º:%dKB,%dMB\n",SDCard.lCardSize,SDCard.lCardSize/1024);
 		
 		#endif
 	}

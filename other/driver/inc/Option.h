@@ -1,4 +1,4 @@
-/**************************************************************
+﻿/**************************************************************
  NAME: option.h
  DESC: To measuure the USB download speed, the WDT is used.
        To measure up to large time, The WDT interrupt is used.

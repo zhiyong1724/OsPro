@@ -1,4 +1,4 @@
-;=========================================
+﻿;=========================================
 ; NAME: 2440INIT.S
 ; DESC: C start up codes
 ;       Configure memory, ISR ,stacks

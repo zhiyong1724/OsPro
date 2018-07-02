@@ -1,4 +1,4 @@
-/**************************************************************
+ï»¿/**************************************************************
 4 Key Scan
 **************************************************************/
 
@@ -14,8 +14,8 @@
 #define LED4		(1<<8)		// rGPB[5] =1 ;
 
 /******************************************************************************
-	4 ¸öÓÃ»§°´¼ü
-ËÄ¸öÊäÈëÒý½Å£º
+	4 ä¸ªç”¨æˆ·æŒ‰é”®
+å››ä¸ªè¾“å…¥å¼•è„šï¼š
 				EINT0 -----( GPF0  )----INPUT---K4
 				EINT2 -----( GPF2  )----INPUT---K3
 				EINT4 -----( GPF4  )----INPUT---K2
@@ -28,25 +28,25 @@ U8 Key_Scan( void )
 	Delay( 80 ) ;
 	if(      (rGPFDAT&(1<< 0)) == 0 )
 	{
-		rGPBDAT = rGPBDAT & ~(LED4);			//ÁÁLED4
+		rGPBDAT = rGPBDAT & ~(LED4);			//äº®LED4
 
 		return 4 ;
 	}
 	else if( (rGPFDAT&(1<< 2)) == 0 )
 	{
-		rGPBDAT = rGPBDAT & ~(LED3);			//ÁÁLED3
+		rGPBDAT = rGPBDAT & ~(LED3);			//äº®LED3
 
 		return 3;
 	}
 	else if( (rGPFDAT&(1<<4)) == 0 )
 	{
-		rGPBDAT = rGPBDAT & ~(LED2);			//ÁÁLED2
+		rGPBDAT = rGPBDAT & ~(LED2);			//äº®LED2
 
 		return 2 ;
 	}
 	else if( (rGPFDAT&(1<< 1)) == 0 )
 	{
-		rGPBDAT = rGPBDAT & ~(LED1);			//ÁÁLED1
+		rGPBDAT = rGPBDAT & ~(LED1);			//äº®LED1
 
 		return 1 ;
 	}
